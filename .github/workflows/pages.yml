@@ -2,7 +2,7 @@ name: Build and deploy homepage
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'codex/**']
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -55,3 +55,4 @@ jobs:
       - name: Deploy site
         id: deployment
         uses: actions/deploy-pages@v4
+
