@@ -1,19 +1,19 @@
 ---
 layout: default
-title : Publications
+title : Publications & Manuscripts
 navbar_title: Publications
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign pubs_by_year = site.publications | sort: "cv_order" | reverse | group_by: "year" %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
         {% for year in pubs_by_year %}
         {% assign num_papers = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        <div class="my-0 p-0 bg-white rounded-xl" style="border: 1px solid #f0f0f0;">
             {% for item in year.items %}
                 {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
             {% endfor %}
@@ -30,3 +30,8 @@ body_attr: >-
     </div>
 
 </div>
+
+<br>
+<p class="middle">
+  <b>{% include i18n.html key="marks" %} </b>* <i> {% include i18n.html key="equal_contribution" %}</i>
+</p>

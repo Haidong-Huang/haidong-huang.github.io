@@ -1,0 +1,19 @@
+{% if site.data.profile.awards %}
+<section class="card border-0 shadow-sm bg-white mt-4" aria-labelledby="awards-heading">
+    <div class="card-body p-4">
+        <div class="mx-2 my-1">
+            <h5 id="awards-heading">{% include i18n.html key="honors_awards" %}</h5>
+            <ul class="list pl-3 mb-1">
+                {% for item in site.data.profile.awards %}
+                <li class="mb-2">
+                    <div class="d-flex">
+                        <div>{{ item.name }}</div>
+                        <div class="ml-auto mt-auto pl-3 no-break"><em>{{ item.date }}</em></div>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+{% endif %}

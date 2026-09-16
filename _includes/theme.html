@@ -1,0 +1,8 @@
+{%- comment -%}
+Theme switcher: set `theme` in _data/display.yml to "classic" or "pixel".
+Classic loads nothing extra; pixel loads retro fonts + pixel-theme.css overrides.
+{%- endcomment -%}
+{%- assign theme = site.data.display.theme | default: "classic" -%}
+{%- if theme == "pixel" -%}
+<link rel="stylesheet" href="{{ '/assets/css/pixel-theme.css' | relative_url }}">
+{%- endif -%}

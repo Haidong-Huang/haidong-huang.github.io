@@ -1,58 +1,127 @@
-primary_name: "Your Name"
-secondary_name: ""
-navbar_name: "Your Name"
+primary_name: "Haidong (Andrew) Huang"
+secondary_name: "Physical AI / Robotics"
+navbar_name: "Haidong (Andrew) Huang"
 
-positions:
-- name: Title or Position
-- name: Affiliation Name
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-
-
-email: "your@email.com"
-# cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+email: "ssyhh10@nottingham.edu.cn"
+github: Haidong-Huang
+gscholar: Af_ycp8AAAAJ
+portrait_url: /assets/images/photos/haidong-huang.jpg
+favicon_url: /assets/images/favicon.svg
+# Enable a CV download after supplying the public PDF.
+# cv_link: /assets/files/haidong-huang-cv.pdf
 
 short_bio_text_justify: false
 short_bio: >-
+  <h6>About Me</h6>
   <p>
-    A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
+    Hi, I'm Haidong <span role="img" aria-label="waving hand">👋</span>!
+    You can call me Andrew. I love robots and am dedicated to integrating them safely and reliably into our lives.
   </p>
   <p>
-    There are various patterns of a bicolour cat. These range from the Van-patterned (colour on the crown of the head 
-    and the tail only) to a solid colour with a throat locket or medallion. Bicolour coats are found in many cat breeds, 
-    as well as being common in domestic longhair and domestic shorthair cats.
+    I am a second-year undergraduate at the
+    <a href="https://www.nottingham.ac.uk/" target="_blank" rel="noopener noreferrer">University of Nottingham</a>,
+    pursuing a Bachelor of Engineering (Honours) degree.
+    I am currently a visiting student in the
+    <a href="https://www.polyu.edu.hk/fcms/" target="_blank" rel="noopener noreferrer">Faculty of Computer and Mathematical Sciences</a>
+    at The Hong Kong Polytechnic University, advised by
+    <a href="https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/" target="_blank" rel="noopener noreferrer">Prof. Chenguang (Charlie) Yang</a>
+    (Fellow of IEEE/IET; Member of
+    <a href="https://euro-acad.eu/" target="_blank" rel="noopener noreferrer">EASA</a> and
+    <a href="https://thenaai.org/" target="_blank" rel="noopener noreferrer">NAAI</a>).
   </p>
-
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  <p>
+    I also spent a wonderful summer at
+    <a href="https://hkust.edu.hk/" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology</a>'s
+    <a href="https://ri.hkust.edu.hk/" target="_blank" rel="noopener noreferrer">Cheng Kar-Shun Robotics Institute</a>,
+    under the supervision of
+    <a href="https://personal.hkust-gz.edu.cn/junma/people-page.html" target="_blank" rel="noopener noreferrer">Prof. Jun Ma</a>.
+    I am also an Undergraduate Researcher in the
+    <a href="https://sites.google.com/view/xiaocong-li/open-positions" target="_blank" rel="noopener noreferrer">Robot Learning and Control Lab</a>
+    at
+    <a href="https://www.eitech.edu.cn/" target="_blank" rel="noopener noreferrer">Eastern Institute of Technology, Ningbo</a>,
+    advised by
+    <a href="https://sites.google.com/view/xiaocong-li/about" target="_blank" rel="noopener noreferrer">Prof. Xiaocong Li</a>,
+    and work closely with
+    <a href="https://h-y-zhu.github.io/" target="_blank" rel="noopener noreferrer">Dr. Haiyue Zhu</a>
+    from <a href="https://www.a-star.edu.sg/" target="_blank" rel="noopener noreferrer">A*STAR</a>.
+  </p>
+  <h6>Research Interests</h6>
+  <p>
+    My research interests lie at the intersection of
+    <strong>robotic manipulation, generative models, and control theory</strong>,
+    with a primary focus on <strong>dexterous manipulation and generative control policies</strong>.
+    I am interested in how an understanding of geometric structure, contact interactions,
+    and action consequences can inform policy learning and closed-loop control,
+    enabling robots to adapt to changing environments, flexibly compose manipulation skills,
+    and reliably accomplish long-horizon tasks.
+    My long-term goal is to enable
+    <strong>robust, safe, and sustained robot deployment at scale in real-world environments</strong>
+    and to build
+    <strong>intelligent systems that perceive, reason about, and interact with the physical world</strong>.
+    More broadly, I am drawn to research that combines
+    <strong>scientific impact with the potential to inspire new ideas</strong>.
+  </p>
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
-  date: Sep. 2024 - present
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+  - name: The Hong Kong Polytechnic University (PolyU)
+    logo: /assets/images/badges/polyu.png
+    dept: Computer and Mathematical Sciences
+    dept_url: https://www.polyu.edu.hk/fcms/
+    position: Visiting Student
+    date: May 2026 - Nov. 2026
+  - name: University of Nottingham (China Campus)
+    logo: /assets/images/badges/nottingham.png
+    url: https://www.nottingham.ac.uk/
+    position: "B.Eng. (Hons) in Electrical and Electronic Engineering · GPA: 3.76"
+    date: Sep. 2024 - Jun. 2028 (Expected)
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+  - name: The Hong Kong Polytechnic University (PolyU)
+    logo: /assets/images/badges/polyu.png
+    position: Visiting Student
+    dept: Faculty of Computer and Mathematical Sciences
+    dept_url: https://www.polyu.edu.hk/fcms/
+    advisor: Chenguang (Charlie) Yang
+    advisor_url: https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/
+    topics: Robot manipulation; learning from demonstrations
+    date: May 2026 - Present
+  - name: The Hong Kong University of Science and Technology
+    logo: /assets/images/badges/hkust.png
+    url: https://hkust.edu.hk/
+    position: Visiting Research Student
+    dept: Cheng Kar-Shun Robotics Institute
+    dept_url: https://ri.hkust.edu.hk/
+    lab: Robot Motion Planning and Control Lab
+    lab_url: https://personal.hkust-gz.edu.cn/junma/index.html
+    advisor: Jun Ma
+    advisor_url: https://personal.hkust-gz.edu.cn/junma/people-page.html
+    topics: Dexterous manipulation; robot manipulation
+    date: Jun. 2026 - Oct. 2026
+  - name: Eastern Institute of Technology, Ningbo (EIT)
+    logo: /assets/images/badges/eit.png
+    url: https://www.eitech.edu.cn/
+    position: Undergraduate Researcher
+    dept: Robot Learning and Control Lab
+    dept_url: https://sites.google.com/view/xiaocong-li/open-positions
+    advisor: Xiaocong Li
+    advisor_url: https://sites.google.com/view/xiaocong-li/about
+    topics: Robot manipulation; embodied AI; control
+    date: Apr. 2025 - Present
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+  - name: Freshman Entrance Scholarship, Top Gaokao-Scoring Incoming Students
+    date: 2024
+  - name: First Prize in Anhui Province, Chinese Physics Olympiad (CPhO)
+    date: 2023
+  - name: Second Prize in Anhui Province, Chinese Physics Olympiad (CPhO)
+    date: 2022
+
+academic_services:
+  - name: The Fortieth Annual Conference on Neural Information Processing Systems
+    abbreviation: NeurIPS 2026
+    role: Reviewer
+    url: https://neurips.cc/Conferences/2026
+  - name: The Forty-First AAAI Conference on Artificial Intelligence
+    abbreviation: AAAI 2027
+    role: Reviewer
+    url: https://aaai.org/conference/aaai/aaai-27/
