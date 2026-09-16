@@ -13,10 +13,24 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-baseurl: "/academic-homepage" # the subpath of your site, e.g. /blog
+url: "https://haidong-huang.github.io"
+baseurl: "" # Personal site: repository must be named haidong-huang.github.io.
+repository: "Haidong-Huang/haidong-huang.github.io"
+title: "Haidong (Andrew) Huang"
+description: "Haidong (Andrew) Huang's academic homepage: Physical AI, robotics, dexterous manipulation, generative models, and control."
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
 plugins:
   - jekyll-email-protect
 
@@ -32,10 +46,50 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-# timezone: Asia/Shanghai
+# Keep unused template demos and maintenance notes out of the public site.
+exclude:
+  - README.md
+  - CONTENT_NOTES.md
+  - DEPLOYMENT.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - release
+  - _showcase
+  - showcase.html
+  - blogs.html
+  - tools
+  - preview.cmd
+  - .preview-tools
+  - .preview-browser
+  - _preview
+  - assets/images/incoming
+  - assets/images/etc
+  - assets/images/photos/portrait.jpg
+  - assets/images/covers/APEX.png
+  - assets/images/covers/DEMO.png
+  - assets/images/covers/Flexible.png
+  - assets/images/covers/PhysLogic.png
+  - assets/images/covers/SPECS.png
+  - assets/images/badges/CAS_logo.png
+  - assets/images/badges/CASIA-logo.jpg
+  - assets/images/badges/meituan_logo.png
+  - assets/images/badges/MIT_Social_circle.png
+  - assets/images/badges/page_logo.png
+  - assets/images/badges/PKU_red.png
+  - assets/images/badges/tencent_logo.png
+  - assets/images/badges/UESTC_logo.png
+  - assets/images/badges/wenge_logo.png
+
+timezone: Asia/Shanghai
 
 collections:
-  - publications
-  - news
-  - showcase
-  - posts
+  publications:
+    output: false
+  blogs:
+    output: true
+    permalink: /posts/:year/:month/:title/
+  news:
+    output: false
+  showcase:
+    output: false

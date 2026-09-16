@@ -1,23 +1,27 @@
-<div class="row mt-3">
+<div class="row mt-4">
     <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
+        <div class="card border-0 shadow-sm bg-white experience-card">
             <div class="card-body p-4">
-                <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="row">
                     {% if site.data.profile.education %}
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 institution-section">
                         <div class="mx-2 my-1">
-                            <h6>Education</h6>
+                            <h5>{% include i18n.html key="education" %}</h5>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.education %}
-                                <li class="media mb-1">
-                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
-                                        </div>
+                                <li class="institution-entry {% if item.logo %}institution-with-logo{% endif %}">
+                                    {% if item.logo %}
+                                    <div class="institution-logo-wrap">
+                                        <img src="{{ item.logo | relative_url }}" alt="{{ item.name | escape }} logo" class="institution-logo" loading="lazy" decoding="async">
+                                    </div>
+                                    {% endif %}
+                                    <div class="institution-content">
+                                        <div class="institution-name">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</div>
+                                        {% if item.dept %}
+                                        <div>{% if item.dept_url %}<a href="{{ item.dept_url }}" target="_blank" rel="noopener noreferrer">{{ item.dept }}</a>{% else %}{{ item.dept }}{% endif %}</div>
+                                        {% endif %}
+                                        <div>{{ item.position }}</div>
+                                        <div class="institution-date"><em>{{ item.date }}</em></div>
                                     </div>
                                 </li>
                                 {% endfor %}
@@ -27,20 +31,33 @@
                     {% endif %}
 
                     {% if site.data.profile.experience %}
-                    <div class="col-lg-6">
+                    <div class="col-xl-6 institution-section">
                         <div class="mx-2 my-1">
-                            <h6>Experience</h6>
+                            <h5>{% include i18n.html key="experience" %}</h5>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.experience %}
-                                <li class="media mb-1">
-                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                                    <div class="media-body">
-                                        <div>{{ item.name }}</div>
-                                        <div class="small">{{ item.dept }}</div>
-                                        <div class="small d-flex">
-                                            <div>{{ item.position }}</div>
-                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                <li class="institution-entry {% if item.logo %}institution-with-logo{% endif %}">
+                                    {% if item.logo %}
+                                    <div class="institution-logo-wrap">
+                                        <img src="{{ item.logo | relative_url }}" alt="{{ item.name | escape }} logo" class="institution-logo" loading="lazy" decoding="async">
+                                    </div>
+                                    {% endif %}
+                                    <div class="institution-content">
+                                        <div class="institution-name">{% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</div>
+                                        <div>{{ item.position }}{% if item.dept %}, {% if item.dept_url %}<a href="{{ item.dept_url }}" target="_blank" rel="noopener noreferrer">{{ item.dept }}</a>{% else %}{{ item.dept }}{% endif %}{% endif %}</div>
+                                        {% if item.lab %}
+                                        <div>{% if item.lab_url %}<a href="{{ item.lab_url }}" target="_blank" rel="noopener noreferrer">{{ item.lab }}</a>{% else %}{{ item.lab }}{% endif %}</div>
+                                        {% endif %}
+                                        {% if item.advisor %}
+                                        <div class="small">
+                                            Advised by Prof.
+                                            {% if item.advisor_url %}<a href="{{ item.advisor_url }}" target="_blank" rel="noopener noreferrer">{{ item.advisor }}</a>{% else %}{{ item.advisor }}{% endif %}
                                         </div>
+                                        {% endif %}
+                                        {% if item.topics %}
+                                        <div class="small"><strong>Research:</strong> {{ item.topics }}</div>
+                                        {% endif %}
+                                        <div class="institution-date"><em>{{ item.date }}</em></div>
                                     </div>
                                 </li>
                                 {% endfor %}
@@ -48,25 +65,6 @@
                         </div>
                     </div>
                     {% endif %}
-
-                    {% if site.data.profile.awards %}
-                    <div class="col-lg-6">
-                        <div class="mx-2 my-1">
-                            <h6>Honors & Awards</h6>
-                            <ul class="list small pl-3 mb-1">
-                                {% for item in site.data.profile.awards %}
-                                <li>
-                                    <div class="d-flex">
-                                        <div>{{ item.name }}</div>
-                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endif %}
-
                 </div>
 
             </div>
