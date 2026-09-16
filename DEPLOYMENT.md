@@ -2,6 +2,8 @@
 
 目标网址：**https://haidong-huang.github.io/**
 
+网站文件已整理到 [合并请求 #1](https://github.com/Haidong-Huang/homepage/pull/1)。[正式 Jekyll 构建和链接检查已通过](https://github.com/Haidong-Huang/homepage/actions/runs/35145001391)，目前尚未合并或发布。按下列顺序操作即可。
+
 这个地址对应 GitHub 账号 `Haidong-Huang`，无需购买域名或服务器，也无需配置 DNS。网页中显示的名字仍是 **Haidong (Andrew) Huang**。修改显示名字不会改变网址。
 
 ## 1. 修改仓库名称
@@ -33,11 +35,11 @@ repository: "Haidong-Huang/haidong-huang.github.io"
 
 ## 3. 将准备好的网站合并到 main
 
-如果已提供网站更新的 Pull Request（合并请求）链接，打开链接，等待 **Build and check Jekyll site** 成功。如果仍为 Draft，先点击 **Ready for review**，然后点击 **Merge pull request → Confirm merge**。
+打开 [Pull Request #1](https://github.com/Haidong-Huang/homepage/pull/1)（仓库改名后旧链接通常会自动跳转）。确认 **Build and check Jekyll site** 成功，先点击 **Ready for review**，然后点击 **Merge pull request → Confirm merge**。
 
 合并请求只负责审阅和构建；合并到 `main` 后才发布。工作流会检查仓库名称，避免把根网址版本发布到 `/homepage/` 路径。
 
-如果没有在线合并请求，可以使用 `release/haidong-huang-homepage-source.zip` 作为上传源。先解压，通过 GitHub Desktop 等 Git 客户端同步完整目录到仓库根目录，务必包含隐藏的 `.github` 文件夹。不要上传 ZIP 文件本身，也不要把内容再套进一个 `homepage` 子文件夹。同名模板文件用本次版本替换。
+本地 `release/haidong-huang-homepage-source.zip` 是备用源码包；使用上面的合并请求就无需再上传。若以后通过该包恢复网站，先解压，再通过 Git 客户端同步完整目录到仓库根目录，包括隐藏的 `.github` 文件夹；不要把 ZIP 文件本身作为网站上传。
 
 ## 4. 等待发布并打开网站
 
@@ -71,3 +73,4 @@ repository: "Haidong-Huang/haidong-huang.github.io"
 | 图片或样式 404 | `baseurl` 是否为空、是否上传完整 assets 目录 |
 
 官方说明：[创建个人 Pages 网站](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)、[Actions 自定义发布](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)、[仓库改名](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository)。
+
