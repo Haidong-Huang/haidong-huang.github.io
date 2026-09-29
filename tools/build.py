@@ -42,6 +42,9 @@ def profile_html(profile, prefix):
         ('GitHub', 'https://github.com/' + profile['github'], 'github.svg'),
     ):
         contact.append(f'<a class="profile-link" href="{url}" target="_blank" rel="noopener noreferrer"><img src="{prefix}assets/files/icon/{icon}" width="22" height="22" alt="">{title}</a>')
+    for key, label, monogram in (('linkedin', 'LinkedIn', 'in'), ('zhihu', 'Zhihu', '知')):
+        if profile.get(key):
+            contact.append(f'<a class="profile-link" href="{text(profile[key])}" target="_blank" rel="noopener noreferrer"><span class="profile-monogram {key}-icon" aria-hidden="true">{monogram}</span>{label}</a>')
     return f'''<section id="about" class="page-section profile-section" data-nav-section data-nav-label="About" tabindex="-1">
       <div class="profile">
         <div class="profile-copy">
@@ -61,13 +64,16 @@ def news_html(news):
     rows = []
     for item in sorted(news, key=lambda n: n['month_key'], reverse=True):
         title = re.sub(r'href="/?publications(?:\.html)?#', 'href="publications.html#', item['title'])
-        rows.append(f'<li><time datetime="{item["month_key"]}">{text(item["month"])} {item["year"]}</time><p>{title}</p></li>')
+        emoji = f'<span class="news-emoji" aria-hidden="true">{text(item["emoji"])}</span> ' if item.get('emoji') else ''
+        rows.append(f'<li><time datetime="{item["month_key"]}">{text(item["month"])} {item["year"]}</time><p>{emoji}{title}</p></li>')
     return section('news', 'News', '<ul class="news-list">' + ''.join(rows) + '</ul>', 'news-section')
 
 
-def author_html(author):
+def author_html(author, project_leader=False):
     name = author.rstrip('*#')
     marks = author[len(name):].replace('#', '†')
+    if project_leader and name == 'Haidong Huang':
+        marks += '‡'
     label = f'<span class="author-self">{text(name)}</span>' if name == 'Haidong Huang' else text(name)
     return label + (f'<sup>{text(marks)}</sup>' if marks else '')
 
@@ -75,11 +81,12 @@ def author_html(author):
 def paper_html(paper, prefix, rank):
     number = paper['cv_order']
     title = text(paper['title'])
-    authors = ', '.join(author_html(author) for author in paper['authors'])
+    authors = ', '.join(author_html(author, paper.get('role') == 'Project Leader') for author in paper['authors'])
     role = f' <span class="paper-role">({text(paper["role"])})</span>' if paper.get('role') else ''
     badge = re.sub(r'<[^>]+>', '', paper.get('pub_last', ''))
     badge = f'<span class="paper-badge">{text(badge)}</span>' if badge else ''
-    note = f'<p class="paper-note">{text(paper["pub_note"])}</p>' if paper.get('pub_note') else ''
+    note_badge = f' <span class="paper-badge">{text(paper["pub_note_badge"])}</span>' if paper.get('pub_note_badge') else ''
+    note = f'<p class="paper-note">{text(paper["pub_note"])}{note_badge}</p>' if paper.get('pub_note') else ''
     highlight = f'<p class="paper-highlight">{text(paper["highlight"])}</p>' if paper.get('highlight') else ''
     links = []
     for label, value in paper.get('links', {}).items():
@@ -102,10 +109,10 @@ def paper_html(paper, prefix, rank):
 def papers_html(papers, prefix, home=True):
     ordered = sorted(papers, key=lambda p: p['cv_order'], reverse=True)
     rows = ''.join(paper_html(p, prefix, i) for i, p in enumerate(ordered))
-    button = '<button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="true" hidden>Show all 11 papers</button>' if home else ''
+    button = '<button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="true" hidden>All Research Papers</button>' if home else ''
     return f'''<section id="research" class="page-section research-section" data-nav-section data-nav-label="Publications" tabindex="-1">
       <header class="section-heading research-heading"><h2 class="section-title" id="research-heading">Publications &amp; Manuscripts</h2>{button}</header>
-      <p class="paper-meta-note">* Equal contribution <span aria-hidden="true">·</span> † Corresponding author</p>
+      <p class="paper-meta-note"><span>* Equal contribution</span><span>† Corresponding author</span><span>‡ Project Leader</span></p>
       <p class="sr-only" id="research-status" role="status" aria-live="polite"></p>
       <div id="research-papers">{rows}</div>
       {f'<p class="publication-directory"><a href="{prefix}publications.html">View complete publication list →</a></p>' if home else ''}
