@@ -14,7 +14,7 @@
       container.appendChild(paper);
     });
     heading.textContent = showAll ? "Publications & Manuscripts" : "Selected Publications & Manuscripts";
-    button.textContent = showAll ? "Show selected papers" : `Show all ${papers.length} papers`;
+    button.textContent = showAll ? "Selected Research Papers" : "All Research Papers";
     button.setAttribute("aria-expanded", String(showAll));
     button.setAttribute("aria-label", showAll ? "Show selected publications only" : "Show all publications and manuscripts");
     if (announce && status) {

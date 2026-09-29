@@ -253,6 +253,11 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
 .research-heading .section-title { font-size: 29px; }
 .paper-row { scroll-margin-top: 38px; border-radius: 6px; }
 .paper-description { line-height: 1.65; }
+.profile-monogram { display: inline-flex; width: 22px; height: 22px; flex: 0 0 22px; align-items: center; justify-content: center; border-radius: 4px; color: white; font-family: Arial, sans-serif; font-size: 16px; font-weight: 700; line-height: 1; }
+.linkedin-icon { background: #0a66c2; }
+.zhihu-icon { background: #1772f6; font-family: "Microsoft YaHei", sans-serif; font-size: 16px; }
+.news-emoji { white-space: nowrap; font-size: 1em; margin-right: 3px; }
+.paper-meta-note { display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .paper-role { color: #877046; font-size: 14px; white-space: nowrap; font-weight: 500; }
 .paper-badge { display: inline-block; margin-left: 4px; padding: 1px 7px; border-radius: 4px; color: #33705d; background: #e7f2ea; font-size: 12px; font-weight: 500; font-style: normal; white-space: nowrap; }
 .paper-note { font-size: 14px; color: var(--text-tertiary); margin-top: 5px; }
