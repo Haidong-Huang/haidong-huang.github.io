@@ -1,9 +1,8 @@
 @echo off
-setlocal
 cd /d "%~dp0"
 if exist "E:\Anaconda\python.exe" (
-    "E:\Anaconda\python.exe" tools\preview.py --serve
+  "E:\Anaconda\python.exe" tools\preview.py
 ) else (
-    python tools\preview.py --serve
+  python tools\preview.py
 )
 pause

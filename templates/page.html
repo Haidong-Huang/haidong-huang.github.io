@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="@@NAME@@">
+  <meta name="description" content="@@DESCRIPTION@@">
+  <meta name="color-scheme" content="light">
+  <meta name="site-version" content="@@VERSION@@">
+  <title>@@TITLE@@</title>
+  <link rel="canonical" href="@@CANONICAL@@">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="@@TITLE@@">
+  <meta property="og:description" content="@@DESCRIPTION@@">
+  <meta property="og:url" content="@@CANONICAL@@">
+  <meta property="og:image" content="@@SITE_URL@@/assets/images/photos/haidong-huang.jpg">
+  <meta property="og:image:alt" content="@@NAME@@">
+  <meta name="twitter:card" content="summary">
+  @@ROBOTS@@
+  <link rel="icon" href="@@PREFIX@@assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="@@PREFIX@@assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="@@PREFIX@@stylesheet.css?v=@@VERSION@@">
+  <script src="@@PREFIX@@navigation.js?v=@@VERSION@@" defer></script>
+  <script src="@@PREFIX@@interactions.js?v=@@VERSION@@" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#@@START@@">Skip to main content</a>
+  <aside class="section-nav" aria-label="Page sections">
+    <div class="section-nav__inner">
+      <a class="section-nav__label" href="@@PREFIX@@index.html">Index</a>
+      <div class="section-nav__track">
+        <span class="section-nav__indicator" aria-hidden="true"></span>
+        <ol class="section-nav__list" id="section-nav-list">@@NAV@@</ol>
+      </div>
+    </div>
+  </aside>
+  <main class="page-shell">@@CONTENT@@
+    <footer class="site-footer">
+      <p>© @@YEAR@@ Haidong Huang <span aria-hidden="true">·</span>
+        <a href="https://github.com/TidalHarley/TidalHarley.github.io" target="_blank" rel="noopener noreferrer">Template</a>
+      </p>
+      <a class="back-top" href="#@@START@@" aria-label="Back to top">↑</a>
+    </footer>
+  </main>
+  <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-caption">
+    <form method="dialog"><button class="dialog-close" aria-label="Close figure">×</button></form>
+    <figure><img id="figure-image" alt=""><figcaption id="figure-caption"></figcaption></figure>
+  </dialog>
+</body>
+</html>

@@ -1,6 +1,0 @@
-# Names must match each page's navbar_title.
-pages:
-  - name: Home
-    url: /
-  - name: Publications
-    url: /publications
