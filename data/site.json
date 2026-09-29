@@ -1,0 +1,423 @@
+{
+  "url": "https://haidong-huang.github.io",
+  "description": "Haidong (Andrew) Huang's academic homepage: Physical AI, robotics, dexterous manipulation, generative models, and control.",
+  "profile": {
+    "primary_name": "Haidong (Andrew) Huang",
+    "secondary_name": "Physical AI / Robotics",
+    "navbar_name": "Haidong (Andrew) Huang",
+    "email": "ssyhh10@nottingham.edu.cn",
+    "github": "Haidong-Huang",
+    "gscholar": "Af_ycp8AAAAJ",
+    "portrait_url": "/assets/images/photos/haidong-huang.jpg",
+    "favicon_url": "/assets/images/favicon.svg",
+    "short_bio_text_justify": false,
+    "short_bio": "<h6>About Me</h6> <p>\n  Hi, I'm Haidong <span role=\"img\" aria-label=\"waving hand\">👋</span>!\n  You can call me Andrew. I love robots and am dedicated to integrating them safely and reliably into our lives.\n</p> <p>\n  I am a second-year undergraduate at the\n  <a href=\"https://www.nottingham.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Nottingham</a>,\n  pursuing a Bachelor of Engineering (Honours) degree.\n  I am currently a visiting student in the\n  <a href=\"https://www.polyu.edu.hk/fcms/\" target=\"_blank\" rel=\"noopener noreferrer\">Faculty of Computer and Mathematical Sciences</a>\n  at The Hong Kong Polytechnic University, advised by\n  <a href=\"https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>\n  (Fellow of IEEE/IET; Member of\n  <a href=\"https://euro-acad.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">EASA</a> and\n  <a href=\"https://thenaai.org/\" target=\"_blank\" rel=\"noopener noreferrer\">NAAI</a>).\n</p> <p>\n  I also spent a wonderful summer at\n  <a href=\"https://hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong University of Science and Technology</a>'s\n  <a href=\"https://ri.hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">Cheng Kar-Shun Robotics Institute</a>,\n  under the supervision of\n  <a href=\"https://personal.hkust-gz.edu.cn/junma/people-page.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Jun Ma</a>.\n  I am also an Undergraduate Researcher in the\n  <a href=\"https://sites.google.com/view/xiaocong-li/open-positions\" target=\"_blank\" rel=\"noopener noreferrer\">Robot Learning and Control Lab</a>\n  at\n  <a href=\"https://www.eitech.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Eastern Institute of Technology, Ningbo</a>,\n  advised by\n  <a href=\"https://sites.google.com/view/xiaocong-li/about\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Xiaocong Li</a>,\n  and work closely with\n  <a href=\"https://h-y-zhu.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Haiyue Zhu</a>\n  from <a href=\"https://www.a-star.edu.sg/\" target=\"_blank\" rel=\"noopener noreferrer\">A*STAR</a>.\n</p> <h6>Research Interests</h6> <p>\n  My research interests lie at the intersection of\n  <strong>robotic manipulation, generative models, and control theory</strong>,\n  with a primary focus on <strong>dexterous manipulation and generative control policies</strong>.\n  I am interested in how an understanding of geometric structure, contact interactions,\n  and action consequences can inform policy learning and closed-loop control,\n  enabling robots to adapt to changing environments, flexibly compose manipulation skills,\n  and reliably accomplish long-horizon tasks.\n  My long-term goal is to enable\n  <strong>robust, safe, and sustained robot deployment at scale in real-world environments</strong>\n  and to build\n  <strong>intelligent systems that perceive, reason about, and interact with the physical world</strong>.\n  More broadly, I am drawn to research that combines\n  <strong>scientific impact with the potential to inspire new ideas</strong>.\n</p>",
+    "education": [
+      {
+        "name": "The Hong Kong Polytechnic University (PolyU)",
+        "logo": "/assets/images/badges/polyu.png",
+        "dept": "Computer and Mathematical Sciences",
+        "dept_url": "https://www.polyu.edu.hk/fcms/",
+        "position": "Visiting Student",
+        "date": "May 2026 - Nov. 2026"
+      },
+      {
+        "name": "University of Nottingham (China Campus)",
+        "logo": "/assets/images/badges/nottingham.png",
+        "url": "https://www.nottingham.ac.uk/",
+        "position": "B.Eng. (Hons) in Electrical and Electronic Engineering · GPA: 3.76",
+        "date": "Sep. 2024 - Jun. 2028 (Expected)"
+      }
+    ],
+    "experience": [
+      {
+        "name": "The Hong Kong Polytechnic University (PolyU)",
+        "logo": "/assets/images/badges/polyu.png",
+        "position": "Visiting Student",
+        "dept": "Faculty of Computer and Mathematical Sciences",
+        "dept_url": "https://www.polyu.edu.hk/fcms/",
+        "advisor": "Chenguang (Charlie) Yang",
+        "advisor_url": "https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/",
+        "topics": "Robot manipulation; learning from demonstrations",
+        "date": "May 2026 - Present"
+      },
+      {
+        "name": "The Hong Kong University of Science and Technology",
+        "logo": "/assets/images/badges/hkust.png",
+        "url": "https://hkust.edu.hk/",
+        "position": "Visiting Research Student",
+        "dept": "Cheng Kar-Shun Robotics Institute",
+        "dept_url": "https://ri.hkust.edu.hk/",
+        "lab": "Robot Motion Planning and Control Lab",
+        "lab_url": "https://personal.hkust-gz.edu.cn/junma/index.html",
+        "advisor": "Jun Ma",
+        "advisor_url": "https://personal.hkust-gz.edu.cn/junma/people-page.html",
+        "topics": "Dexterous manipulation; robot manipulation",
+        "date": "Jun. 2026 - Oct. 2026"
+      },
+      {
+        "name": "Eastern Institute of Technology, Ningbo (EIT)",
+        "logo": "/assets/images/badges/eit.png",
+        "url": "https://www.eitech.edu.cn/",
+        "position": "Undergraduate Researcher",
+        "dept": "Robot Learning and Control Lab",
+        "dept_url": "https://sites.google.com/view/xiaocong-li/open-positions",
+        "advisor": "Xiaocong Li",
+        "advisor_url": "https://sites.google.com/view/xiaocong-li/about",
+        "topics": "Robot manipulation; embodied AI; control",
+        "date": "Apr. 2025 - Present"
+      }
+    ],
+    "awards": [
+      {
+        "name": "Freshman Entrance Scholarship, Top Gaokao-Scoring Incoming Students",
+        "date": 2024
+      },
+      {
+        "name": "First Prize in Anhui Province, Chinese Physics Olympiad (CPhO)",
+        "date": 2023
+      },
+      {
+        "name": "Second Prize in Anhui Province, Chinese Physics Olympiad (CPhO)",
+        "date": 2022
+      }
+    ],
+    "academic_services": [
+      {
+        "name": "The Fortieth Annual Conference on Neural Information Processing Systems",
+        "abbreviation": "NeurIPS 2026",
+        "role": "Reviewer",
+        "url": "https://neurips.cc/Conferences/2026"
+      },
+      {
+        "name": "The Forty-First AAAI Conference on Artificial Intelligence",
+        "abbreviation": "AAAI 2027",
+        "role": "Reviewer",
+        "url": "https://aaai.org/conference/aaai/aaai-27/"
+      }
+    ]
+  },
+  "publications": [
+    {
+      "title": "Opinion: Towards Unified Expressive Policy Optimization for Robust Robot Learning",
+      "cv_order": 1,
+      "year": 2025,
+      "selected": true,
+      "selected_order": 2,
+      "pub_pre": "Accepted by ",
+      "pub": "EWM Workshop @ Conference on Neural Information Processing Systems (NeurIPS)",
+      "pub_date": "2025",
+      "pub_last": "<span class=\"badge badge-pill badge-publication badge-success\">Spotlight</span>",
+      "cover": "/assets/images/covers/uepo.png",
+      "cover_width": 1434,
+      "cover_height": 768,
+      "abstract": "We propose <strong>UEPO</strong> to address limited behavioral coverage and distribution shift in offline-to-online reinforcement learning. It combines multi-seed diffusion sampling, dynamic divergence regularization, and trajectory augmentation to improve policy diversity and dynamics-model learning without training multiple policy models. D4RL evaluations report higher aggregate scores than Uni-O4 across locomotion, dexterous manipulation, and kitchen tasks.",
+      "authors": [
+        "Haidong Huang",
+        "Haiyue Zhu",
+        "Jiayu Song",
+        "Xixin Zhao",
+        "Yaohua Zhou",
+        "Jiayi Zhang",
+        "Yuze Zhai",
+        "Xiaocong Li"
+      ]
+    },
+    {
+      "title": "ALAS: Adaptive Long-Horizon Action Synthesis via Disentangled Environment and Self-State Representations",
+      "cv_order": 5,
+      "year": 2026,
+      "selected": true,
+      "selected_order": 9,
+      "pub_pre": "Submitted to ",
+      "pub": "IEEE Humanoid",
+      "pub_date": "2026",
+      "cover": "/assets/images/covers/alas.png",
+      "cover_width": 1258,
+      "cover_height": 490,
+      "abstract": "<strong>ALAS</strong> addresses limited environmental transfer and skill reuse in long-horizon human–scene interaction. It disentangles environmental context from self-state dynamics and progressively integrates them through cross-attention, gated fusion, and mixture-of-experts fusion. Evaluations show improved cross-scene transfer and skill composition, faster long-horizon execution, and gains in learning efficiency on HumanoidBench.",
+      "authors": [
+        "Yutong Shen*",
+        "Haidong Huang*",
+        "Lei Zhang",
+        "Penghui Liu",
+        "Yinqi Liu"
+      ]
+    },
+    {
+      "title": "CoRDE: Concept-Prior Routed Diffusion Experts for Structural Generalization in Robot Manipulation",
+      "cv_order": 3,
+      "year": 2026,
+      "selected": true,
+      "selected_order": 1,
+      "highlight": "Received a $1,500 travel grant from IEEE RAS.",
+      "pub_pre": "Accepted by ",
+      "pub": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "pub_date": "2026",
+      "pub_last": "<span class=\"badge badge-pill badge-publication badge-success\">Oral Presentation</span>",
+      "cover": "/assets/images/covers/corde.png",
+      "cover_width": 1462,
+      "cover_height": 760,
+      "abstract": "<strong>CoRDE</strong> addresses cross-task interference and unstable expert routing in multi-task manipulation. It combines concept priors with behavioral evidence through confidence-adaptive responsibility inference, while LoRA experts share a frozen diffusion backbone for parameter-efficient specialization. LIBERO and D3IL evaluations show improved task success, more stable expert allocation, and stronger behavioral diversity.",
+      "authors": [
+        "Haidong Huang",
+        "Xixin Zhao",
+        "Yaohua Zhou",
+        "Jiayu Song",
+        "Jiayi Zhang",
+        "Jun Ma",
+        "Haiyue Zhu",
+        "Xiaocong Li"
+      ]
+    },
+    {
+      "title": "Joint-Angle Invariance of Jacobian-Based Performance Indices for Serial Robotic Manipulators",
+      "cv_order": 2,
+      "year": 2026,
+      "selected": false,
+      "pub_pre": "Accepted by ",
+      "pub": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "pub_date": "2026",
+      "pub_last": "<span class=\"badge badge-pill badge-publication badge-success\">Oral Presentation</span>",
+      "cover": "/assets/images/covers/joint-angle-invariance.png",
+      "cover_width": 1263,
+      "cover_height": 576,
+      "abstract": "<strong>Joint-angle invariance (JAI)</strong> reduces the cost of Jacobian-based robot performance evaluation. We identify conditions under which selected manipulability and stiffness indices are independent of the first and last joint angles, enabling reduced-dimensional performance mapping and task-layout optimization. The demonstrated case reduces map-construction time from 163.887 to 1.723 seconds while preserving numerical accuracy.",
+      "authors": [
+        "Yaohua Zhou",
+        "Mingdao Lin",
+        "Jiayu Song",
+        "Xixin Zhao",
+        "Haidong Huang",
+        "Jiahu Qin",
+        "Xiaocong Li"
+      ]
+    },
+    {
+      "title": "Preserving Operator Intent Under Actuation Constraints: Teleoperation of Manipulators with Coupled Transmissions",
+      "cv_order": 4,
+      "year": 2026,
+      "selected": true,
+      "selected_order": 3,
+      "role": "Project Leader",
+      "pub_pre": "Accepted by ",
+      "pub": "5th Sensorimotor-Augmented Teleoperation Workshop @ IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "pub_date": "2026",
+      "pub_last": "<span class=\"badge badge-pill badge-publication badge-success\">Spotlight</span>",
+      "cover": "/assets/images/covers/operator-intent.png",
+      "cover_width": 1573,
+      "cover_height": 396,
+      "abstract": "Our <strong>actuator-constraint-aware teleoperation framework</strong> addresses motion distortion under coupled transmissions, gravity, and motor saturation. It combines coordinated actuator-space projection, gravity compensation, and continuous feasible-reference updates to preserve operator intent and reduce recovery transients. Real-robot experiments show smoother wrist motion, with 73.6% lower average velocity standard deviation than the no-gravity-compensation baseline.",
+      "authors": [
+        "Xuhan Miao",
+        "Zijin Han",
+        "Yutong Shen",
+        "Haidong Huang",
+        "Shanliushui Gao",
+        "Lei Zhang",
+        "Xiaocong Li",
+        "Chenguang Yang"
+      ]
+    },
+    {
+      "title": "Consequence-Quotient Flow Matching for Robot Manipulation",
+      "cv_order": 10,
+      "year": 2027,
+      "selected": true,
+      "selected_order": 5,
+      "pub_pre": "Submitted to ",
+      "pub": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "pub_date": "2027",
+      "cover": "/assets/images/covers/cq-fm.png",
+      "cover_width": 1449,
+      "cover_height": 607,
+      "abstract": "<strong>CQ-FM</strong> addresses the mismatch between action-coordinate errors and their task consequences. A learned consequence geometry guides both flow-matching training and safeguarded Gauss–Newton corrections with receding-horizon replanning, without enlarging the VLA backbone. Experiments show higher measured success in simulation and on hardware, including an increase from 69% to 78% across four real-robot tasks.",
+      "authors": [
+        "Yutong Shen*",
+        "Haidong Huang*",
+        "Heng Zhang",
+        "Haoxuan Xu",
+        "Yiqing Yin",
+        "Xuanhao Zheng",
+        "Xuhan Miao",
+        "Arash Ajoudani",
+        "Lei Zhang",
+        "Xiaocong Li"
+      ]
+    },
+    {
+      "title": "Identifiability and Active Confirmation of Contact Mobility Transitions",
+      "cv_order": 11,
+      "year": 2027,
+      "selected": true,
+      "selected_order": 4,
+      "pub_pre": "Submitted to ",
+      "pub": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "pub_date": "2027",
+      "pub_note": "RSS 2026 Workshop on Geometry of Motion (Oral Presentation).",
+      "cover": "/assets/images/covers/contact-mobility.png",
+      "cover_width": 1387,
+      "cover_height": 784,
+      "abstract": "We characterize why passive contact observations can leave post-transition mobility ambiguous and derive identification-query requirements under an ideal projector model. Our <strong>active-confirmation pipeline</strong> combines transition detection, contact-state canonicalization, and targeted motion probes. Controlled MuJoCo noise audits using simulator-ground-truth eligibility report no incorrect geometry decisions, with safe aborts for ineligible cases.",
+      "authors": [
+        "Xixin Zhao",
+        "Haidong Huang",
+        "Yaohua Zhou",
+        "Jiayu Song",
+        "Yuji Yamakawa"
+      ]
+    },
+    {
+      "title": "GeoPreserve: Preserving Action-Relevant Geometry in 3D Diffusion Policies for Long-Horizon Manipulation",
+      "cv_order": 7,
+      "year": 2027,
+      "selected": true,
+      "selected_order": 7,
+      "pub_pre": "Submitted to ",
+      "pub": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "pub_date": "2027",
+      "cover": "/assets/images/covers/geopreserve.png",
+      "cover_width": 997,
+      "cover_height": 252,
+      "abstract": "<strong>GeoPreserve</strong> addresses the loss of action-relevant geometry in compact 3D diffusion policies. Its <strong>Rewriting–Routing–Recovery</strong> design combines same-source density–depth views, relation-aware conditioning, and multi-scale denoising to preserve geometric distinctions throughout action generation. LIBERO, RoboTwin 2.0, and D3IL evaluations show improved success and behavioral-mode coverage, with only 4.69% more parameters than the Mamba Policy backbone.",
+      "authors": [
+        "Haidong Huang*",
+        "Yutong Shen*",
+        "Xingwei Chen",
+        "Heng Zhang",
+        "Chenguang Yang",
+        "Haiyue Zhu",
+        "Jun Ma",
+        "Xiaocong Li"
+      ]
+    },
+    {
+      "title": "MetaWorld-X: Semantic-Prior Expert Orchestration with Training-Time Latent Model-Based Improvement",
+      "cv_order": 6,
+      "year": 2027,
+      "selected": true,
+      "selected_order": 8,
+      "pub_pre": "Submitted to ",
+      "pub": "AAAI Conference on Artificial Intelligence (AAAI)",
+      "pub_date": "2027",
+      "cover": "/assets/images/covers/metaworld-x.png",
+      "cover_width": 934,
+      "cover_height": 438,
+      "abstract": "<strong>MetaWorld-X</strong> separates humanoid skill acquisition from semantic expert orchestration to reduce cross-skill interference. Human-motion-informed experts use imitation-constrained reinforcement learning and training-time latent-model improvement, while a VLM-supervised router refines semantic guidance through action compatibility and task returns. HumanoidBench evaluations show improved task returns and up to 3.8× faster foundational-skill convergence, without online planning at deployment.",
+      "authors": [
+        "Yutong Shen*",
+        "Haidong Huang",
+        "Heng Zhang",
+        "Penghui Liu",
+        "Jiashuo Luo",
+        "Zhang Shunqi",
+        "Chen Jiang",
+        "Chenguang Yang",
+        "Arash Ajoudani",
+        "Jianwei Zhang",
+        "Lei Zhang"
+      ]
+    },
+    {
+      "title": "TA-SmolVLA: Tactile Tokens from Dense Force Fields for Contact-Rich Insertion",
+      "cv_order": 9,
+      "year": 2027,
+      "selected": false,
+      "pub_pre": "Submitted to ",
+      "pub": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "pub_date": "2027",
+      "cover": "/assets/images/covers/ta-smolvla.png",
+      "cover_width": 1003,
+      "cover_height": 456,
+      "abstract": "<strong>TA-SmolVLA</strong> addresses visually occluded, contact-rich plug insertion by combining bilateral dense force-field tactile tokens with vision, language, and robot state. Its policy-to-control interface converts generated action chunks into filtered, error-limited equilibrium poses for Cartesian impedance control. Real-robot evaluation achieves 80% insertion success (16/20 trials), with dense tactile fields outperforming resultant-wrench inputs in stage-weighted performance across three policy backbones.",
+      "authors": [
+        "Xuqi Su",
+        "Yichen Wang",
+        "Mihael Simonic",
+        "Zhenxin Yu",
+        "Chan Zhang",
+        "Xingwei Chen",
+        "Haidong Huang",
+        "Yaohua Zhou",
+        "Xiaocong Li"
+      ]
+    },
+    {
+      "title": "A Ranking-Based Performance Normalization Method for Multi-Objective Robot Trajectory Optimization",
+      "cv_order": 8,
+      "year": 2027,
+      "selected": true,
+      "selected_order": 6,
+      "pub_pre": "Submitted to ",
+      "pub": "IEEE International Conference on Robotics and Automation (ICRA)",
+      "pub_date": "2027",
+      "cover": "/assets/images/covers/nrbpem.png",
+      "cover_width": 483,
+      "cover_height": 162,
+      "abstract": "<strong>NRBPEM</strong> addresses scale imbalance and sensitivity to extreme values in multi-objective robot trajectory optimization. It combines rank-based normalization from sampled performance distributions with sequential weighted-sum optimization and simplified motion constraints. Simulated polishing and plotting studies show more robust normalization, reduced objective dominance, and faster convergence than min–max normalization while maintaining comparable trajectory performance.",
+      "authors": [
+        "Yaohua Zhou",
+        "Haidong Huang",
+        "Xixin Zhao",
+        "Gang Xu",
+        "Xiaocong Li"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "year": 2026,
+      "month": "Jul",
+      "month_key": "2026-07",
+      "title": "I am honored to have received a $1,500 travel grant from <a href=\"https://www.ieee-ras.org/\" target=\"_blank\" rel=\"noopener noreferrer\">IEEE RAS</a>."
+    },
+    {
+      "year": 2026,
+      "month": "Jun",
+      "month_key": "2026-06",
+      "title": "I am honored to join <a href=\"https://hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong University of Science and Technology</a> as a visiting research student under the supervision of <a href=\"https://personal.hkust-gz.edu.cn/junma/people-page.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Jun Ma</a>!"
+    },
+    {
+      "year": 2026,
+      "month": "May",
+      "month_key": "2026-05",
+      "title": "I am honored to join <a href=\"https://www.polyu.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University</a> as a visiting student under the supervision of <a href=\"https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>!"
+    },
+    {
+      "year": 2026,
+      "month": "Apr",
+      "month_key": "2026-04",
+      "title": "It is an honor to become an <a href=\"https://www.ieee-ras.org/\" target=\"_blank\" rel=\"noopener noreferrer\">IEEE RAS</a> student member!"
+    },
+    {
+      "year": 2026,
+      "month": "Mar",
+      "month_key": "2026-03",
+      "title": "<a href=\"publications#publication-3\">CoRDE</a> and <a href=\"publications#publication-2\">JAI</a> have been accepted to IROS 2026 for oral presentations. See you in Pittsburgh!"
+    },
+    {
+      "year": 2025,
+      "month": "Sep",
+      "month_key": "2025-09",
+      "title": "<a href=\"publications#publication-1\">UEPO</a> was accepted by EWM @ <a href=\"https://neurips.cc/Conferences/2025\" target=\"_blank\" rel=\"noopener noreferrer\">NeurIPS</a> and selected for a spotlight presentation!"
+    },
+    {
+      "year": 2025,
+      "month": "Apr",
+      "month_key": "2025-04",
+      "title": "I am honored to join the <a href=\"https://sites.google.com/view/xiaocong-li/open-positions\" target=\"_blank\" rel=\"noopener noreferrer\">Robot Learning and Control Laboratory</a> at <a href=\"https://www.eitech.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">EIT</a>, under the supervision of <a href=\"https://sites.google.com/view/xiaocong-li/about\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Xiaocong Li</a>."
+    },
+    {
+      "year": 2024,
+      "month": "Sep",
+      "month_key": "2024-09",
+      "title": "Starting undergraduate life at the <a href=\"https://www.nottingham.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Nottingham</a>!"
+    },
+    {
+      "year": 2023,
+      "month": "Sep",
+      "month_key": "2023-09",
+      "title": "It is a great honor to have won a provincial first prize—ranking 86th in the province—at the 40th Chinese Physics Olympiad (CPhO), thereby concluding my three-year journey in physics competitions."
+    }
+  ]
+}
