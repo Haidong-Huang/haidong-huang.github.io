@@ -26,7 +26,7 @@
         "name": "University of Nottingham (China Campus)",
         "logo": "/assets/images/badges/nottingham.png",
         "url": "https://www.nottingham.ac.uk/",
-        "position": "B.Eng. (Hons) in Electrical and Electronic Engineering · GPA: 3.76",
+        "position": "Bachelor of Engineering (Hons)",
         "date": "Sep. 2024 - Jun. 2028 (Expected)"
       }
     ],
@@ -99,7 +99,19 @@
       }
     ],
     "linkedin": "https://www.linkedin.com/in/haidong-huang-b809303a0",
-    "zhihu": "https://www.zhihu.com/people/9-58-8-43-60"
+    "zhihu": "https://www.zhihu.com/people/9-58-8-43-60",
+    "miscellaneous": {
+      "paragraphs": [
+        "I have a passion for robots; the first movie I ever watched was <a href=\"https://en.wikipedia.org/wiki/Real_Steel\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Real Steel</em></a>, and my all-time favorite is <a href=\"https://en.wikipedia.org/wiki/Big_Hero_6_(film)\" target=\"_blank\" rel=\"noopener noreferrer\"><em>Big Hero 6</em></a>. I have loved robots since I was young and dreamed of building one of my own—a dream that is now gradually becoming a reality. <span role=\"img\" aria-label=\"sunshine\">☀️</span>",
+        "During high school, I was deeply immersed in <a href=\"https://cpho.pku.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Physics</a> and <a href=\"https://www.chemsoc.org.cn/home.html\" target=\"_blank\" rel=\"noopener noreferrer\">Chemistry Olympiad</a> competitions, with a particular passion for mechanics. These experiences ignited my enthusiasm for research into enabling robots to engage in contact-rich interactions with the world around them. I love physics; it allows us to gain a profound, fundamental understanding of the world while simultaneously helping us better understand ourselves.",
+        "Beyond my research, I enjoy playing basketball, soccer, and table tennis. I am an NBA fan, and my favorite basketball players are <a href=\"https://en.wikipedia.org/wiki/Kyrie_Irving\" target=\"_blank\" rel=\"noopener noreferrer\">Kyrie Irving</a> and <a href=\"https://en.wikipedia.org/wiki/Kevin_Durant\" target=\"_blank\" rel=\"noopener noreferrer\">Kevin Durant</a> <span role=\"img\" aria-label=\"basketball\">🏀</span>. I am also a huge fan of <a href=\"https://en.wikipedia.org/wiki/Lionel_Messi\" target=\"_blank\" rel=\"noopener noreferrer\">Lionel Messi</a> <span role=\"img\" aria-label=\"soccer\">⚽</span> and <a href=\"https://en.wikipedia.org/wiki/Fan_Zhendong\" target=\"_blank\" rel=\"noopener noreferrer\">Fan Zhendong</a> <span role=\"img\" aria-label=\"table tennis\">🏓</span>.",
+        "I love rap music and have a particular fondness for <a href=\"https://en.wikipedia.org/wiki/Gospel_music\" target=\"_blank\" rel=\"noopener noreferrer\">gospel music</a>. My favorite artists are <a href=\"https://en.wikipedia.org/wiki/Kanye_West\" target=\"_blank\" rel=\"noopener noreferrer\">Kanye West</a> and <a href=\"https://www.youtube.com/channel/UCflu0Zv1dZxA_a6d6THSPjQ\" target=\"_blank\" rel=\"noopener noreferrer\">ASEN</a>. Music has extraordinary power."
+      ],
+      "quote": {
+        "text": "What I cannot create, I do not understand.",
+        "author": "Richard P. Feynman"
+      }
+    }
   },
   "publications": [
     {
@@ -130,7 +142,7 @@
       "title": "ALAS: Adaptive Long-Horizon Action Synthesis via Disentangled Environment and Self-State Representations",
       "cv_order": 5,
       "year": 2026,
-      "selected": false,
+      "selected": true,
       "pub_pre": "Submitted to ",
       "pub": "IEEE Humanoid",
       "pub_date": "2026",
@@ -144,7 +156,8 @@
         "Lei Zhang",
         "Penghui Liu",
         "Yinqi Liu"
-      ]
+      ],
+      "selected_order": 6
     },
     {
       "title": "CoRDE: Concept-Prior Routed Diffusion Experts for Structural Generalization in Robot Manipulation",
@@ -426,7 +439,7 @@
       "year": 2023,
       "month": "Sep",
       "month_key": "2023-09",
-      "title": "I am deeply honored to have won a provincial first-prize (ranking 86th in the province) in the 40th Chinese Physics Olympiad (CPhO), an achievement that brings a perfect conclusion to my three-year journey in physics competitions.",
+      "title": "I am deeply honored to have won a provincial first-prize (ranking 86th in the province) in the 40th Chinese Physics Olympiad (CPhO), an achievement that brings a perfect conclusion to my three-year journey in the Physics Olympiad.",
       "emoji": "🎖️"
     }
   ]

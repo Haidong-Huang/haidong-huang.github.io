@@ -250,6 +250,13 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
 .profile-subheading { font-family: var(--font-heading); font-size: 24px; font-weight: 400; margin: 0 0 12px; }
 .research-interests p { font-size: 16.5px; line-height: 1.75; color: var(--text-secondary); }
 .research-interests strong { color: var(--text-primary); }
+.beyond-layout p { font-size: 16.5px; line-height: 1.7; }
+.beyond-layout p + p { margin-top: 16px; }
+.beyond-layout a { color: #527f9f; }
+.beyond-layout a:hover { color: var(--accent-orange); }
+.personal-quote { margin: 30px 0 0; padding: 12px 0 12px 20px; border-left: 2px solid #dbe8f6; }
+.personal-quote p { font-family: var(--font-heading); font-size: 19px; line-height: 1.6; color: var(--text-secondary); font-style: italic; }
+.personal-quote cite { display: block; margin-top: 10px; font-size: 14px; font-style: normal; color: var(--text-tertiary); }
 .research-heading .section-title { font-size: 29px; }
 .paper-row { scroll-margin-top: 38px; border-radius: 6px; }
 .paper-description { line-height: 1.65; }
@@ -295,6 +302,9 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .profile-tagline { text-align: center; font-size: 16px; margin-bottom: 24px; }
   .profile-portrait { width: 190px; padding-top: 0; margin-bottom: 22px; }
   .research-interests p { font-size: 16px; }
+  .beyond-layout p { font-size: 16px; }
+  .personal-quote { margin-top: 27px; padding-left: 15px; }
+  .personal-quote p { font-size: 18px; }
   .research-heading .section-title { font-size: 27px; }
   .institution-row { grid-template-columns: 96px minmax(0, 1fr); gap: 18px; }
   .institution-logo { width: 96px; min-height: 64px; }

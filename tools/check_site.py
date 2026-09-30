@@ -66,8 +66,8 @@ def main():
         name = path.relative_to(OUTPUT).as_posix()
         check(page.language == 'en', f'{name}: language must be English')
         check(not page.duplicates, f'{name}: duplicate IDs {page.duplicates}')
-        check(not ({'language', 'beyond'} & page.ids), f'{name}: removed template section still present')
-        check(not re.search(r'Haolin Yang|杨昊霖|Peking University|TOEFL|Miscellaneous', ' '.join(page.text)), f'{name}: template content remains')
+        check('language' not in page.ids, f'{name}: removed Language section still present')
+        check(not re.search(r'Haolin Yang|杨昊霖|Peking University|TOEFL', ' '.join(page.text)), f'{name}: template content remains')
         check(page.canonical == data['url'] + ('/' if name == 'index.html' else '/404.html' if name == '404.html' else '/publications.html'), f'{name}: incorrect canonical URL')
         for ref in page.refs:
             parsed = urlsplit(ref)
@@ -92,6 +92,12 @@ def main():
     home = pages[(OUTPUT / 'index.html').resolve()]
     home_text = ' '.join(' '.join(home.text).split())
     check(data['profile']['primary_name'] in home_text, 'Missing personal name')
+    check('beyond' in home.ids, 'Missing Miscellaneous section')
+    miscellaneous = data['profile']['miscellaneous']
+    for paragraph in miscellaneous['paragraphs']:
+        check(plain(paragraph) in home_text, 'Missing Miscellaneous paragraph')
+    for value in miscellaneous['quote'].values():
+        check(value in home_text, 'Missing personal quotation or attribution')
     for item in data['news']:
         check(plain(item['title']) in home_text, f'Missing News item {item["month_key"]}')
     for section in ('education', 'experience', 'awards', 'academic_services'):

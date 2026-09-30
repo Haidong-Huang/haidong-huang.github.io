@@ -146,6 +146,14 @@ def institutions_html(items, prefix, research=False):
                    '<div class="experience-list">' + ''.join(rows) + '</div>', label='Experience' if research else 'Education')
 
 
+def miscellaneous_html(miscellaneous):
+    paragraphs = ''.join(f'<p>{paragraph}</p>' for paragraph in miscellaneous['paragraphs'])
+    quote = miscellaneous['quote']
+    content = f'''<div class="beyond-layout">{paragraphs}</div>
+      <blockquote class="personal-quote"><p>“{text(quote['text'])}”</p><cite>— <strong>{text(quote['author'])}</strong></cite></blockquote>'''
+    return section('beyond', 'Miscellaneous', content)
+
+
 def build():
     content = json.loads((ROOT / 'data/site.json').read_text(encoding='utf-8'))
     profile = content['profile']
@@ -177,8 +185,9 @@ def build():
     home += section('honors', 'Honors & Awards', awards, label='Honors')
     home += institutions_html(profile['education'], '') + institutions_html(profile['experience'], '', True)
     home += section('services', 'Academic Services', services, label='Services')
+    home += miscellaneous_html(profile['miscellaneous'])
     # Keep section navigation in the same order as the visible content.
-    menu = [('about', 'About'), ('news', 'News'), ('research', 'Publications'), ('honors', 'Honors'), ('education', 'Education'), ('experience', 'Experience'), ('services', 'Services')]
+    menu = [('about', 'About'), ('news', 'News'), ('research', 'Publications'), ('honors', 'Honors'), ('education', 'Education'), ('experience', 'Experience'), ('services', 'Services'), ('beyond', 'Miscellaneous')]
     page('index.html', home, profile['primary_name'] + ' | Physical AI / Robotics', content['url'] + '/', [(f'#{i}', n) for i, n in menu])
     for name, prefix in [('publications.html', ''), ('publications/index.html', '../')]:
         body = f'<div class="publications-intro"><a href="{prefix}index.html">← Back to homepage</a><p>{text(profile["primary_name"])}</p></div>'
