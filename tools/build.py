@@ -69,22 +69,26 @@ def news_html(news):
     return section('news', 'News', '<ul class="news-list">' + ''.join(rows) + '</ul>', 'news-section')
 
 
-def author_html(author, project_leader=False):
+def author_html(author, project_leader=False, profile_url=None):
     name = author.rstrip('*#')
     marks = author[len(name):].replace('#', '†')
     if project_leader and name == 'Haidong Huang':
         marks += '‡'
     label = f'<span class="author-self">{text(name)}</span>' if name == 'Haidong Huang' else text(name)
+    if profile_url:
+        label = f'<a href="{text(profile_url)}" target="_blank" rel="noopener noreferrer">{label}</a>'
     return label + (f'<sup>{text(marks)}</sup>' if marks else '')
 
 
 def paper_html(paper, prefix, rank):
     number = paper['cv_order']
     title = text(paper['title'])
-    authors = ', '.join(author_html(author, paper.get('role') == 'Project Leader') for author in paper['authors'])
+    authors = ', '.join(author_html(author, paper.get('role') == 'Project Leader', paper.get('author_links', {}).get(author.rstrip('*#'))) for author in paper['authors'])
     role = f' <span class="paper-role">({text(paper["role"])})</span>' if paper.get('role') else ''
     badge = re.sub(r'<[^>]+>', '', paper.get('pub_last', ''))
     badge = f'<span class="paper-badge">{text(badge)}</span>' if badge else ''
+    venue = (f'<p class="venue-full">{text(paper.get("pub_pre", ""))}{text(paper["pub"])}{paper.get("pub_post", "")} {text(paper.get("pub_date", ""))} {badge}</p>'
+             if paper.get('pub') else '')
     note_badge = f' <span class="paper-badge">{text(paper["pub_note_badge"])}</span>' if paper.get('pub_note_badge') else ''
     note = f'<p class="paper-note">{text(paper["pub_note"])}{note_badge}</p>' if paper.get('pub_note') else ''
     highlight = f'<p class="paper-highlight">{text(paper["highlight"])}</p>' if paper.get('highlight') else ''
@@ -99,7 +103,7 @@ def paper_html(paper, prefix, rank):
       <div class="paper-content">
         <h3 class="papertitle" id="publication-{number}-title">{title}{role}</h3>
         <p class="authors">{authors}</p>
-        <p class="venue-full">{text(paper.get('pub_pre', ''))}{text(paper['pub'])}{paper.get('pub_post', '')} {text(paper['pub_date'])} {badge}</p>
+        {venue}
         {note}{highlight}
         <p class="paper-description">{paper['abstract']}</p>{resources}
       </div>
