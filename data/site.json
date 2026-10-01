@@ -11,7 +11,7 @@
     "portrait_url": "/assets/images/photos/haidong-huang.jpg",
     "favicon_url": "/assets/images/favicon.svg",
     "short_bio_text_justify": false,
-    "short_bio": "<h6>About Me</h6> <p>\n  Hi, I'm Haidong <span role=\"img\" aria-label=\"waving hand\">👋</span>!\n  You can call me Andrew. I love robots and am dedicated to integrating them safely and reliably into our lives.\n</p> <p>\n  I am a second-year undergraduate at the\n  <a href=\"https://www.nottingham.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Nottingham</a>,\n  pursuing a Bachelor of Engineering (Honours) degree.\n  I am currently a visiting student in the\n  <a href=\"https://www.polyu.edu.hk/fcms/\" target=\"_blank\" rel=\"noopener noreferrer\">Faculty of Computer and Mathematical Sciences</a>\n  at <a href=\"https://www.polyu.edu.hk/tc/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University (PolyU)</a>, advised by\n  <a href=\"https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>\n  (Fellow of IEEE/IET; Member of\n  <a href=\"https://euro-acad.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">EASA</a> and\n  <a href=\"https://thenaai.org/\" target=\"_blank\" rel=\"noopener noreferrer\">NAAI</a>).\n</p> <p>\n  I also spent a wonderful summer at\n  <a href=\"https://hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong University of Science and Technology (HKUST)</a>'s\n  <a href=\"https://ri.hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">Cheng Kar-Shun Robotics Institute</a>,\n  under the supervision of\n  <a href=\"https://personal.hkust-gz.edu.cn/junma/people-page.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Jun Ma</a>.\n  I am also an Undergraduate Researcher in the\n  <a href=\"https://sites.google.com/view/xiaocong-li/open-positions\" target=\"_blank\" rel=\"noopener noreferrer\">Robot Learning and Control Lab</a>\n  at\n  <a href=\"https://www.eitech.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Eastern Institute of Technology, Ningbo</a>,\n  advised by\n  <a href=\"https://sites.google.com/view/xiaocong-li/about\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Xiaocong Li</a>,\n  and work closely with\n  <a href=\"https://h-y-zhu.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Haiyue Zhu</a>\n  from <a href=\"https://www.a-star.edu.sg/\" target=\"_blank\" rel=\"noopener noreferrer\">A*STAR</a>.\n</p> <h6>Research Interests</h6> <p>\n  My research interests lie at the intersection of\n  <strong>robotic manipulation, generative models, and control theory</strong>,\n  with a primary focus on <strong>dexterous manipulation and generative control policies</strong>.\n  I am interested in how an understanding of geometric structure, contact interactions,\n  and action consequences can inform policy learning and closed-loop control,\n  enabling robots to adapt to changing environments, flexibly compose manipulation skills,\n  and reliably accomplish long-horizon tasks.\n  My long-term goal is to enable\n  <strong>robust, safe, and sustained robot deployment at scale in real-world environments</strong>\n  and to build\n  <strong>intelligent systems that perceive, reason about, and interact with the physical world</strong>.\n  More broadly, I am drawn to research that combines\n  <strong>scientific impact with the potential to inspire new ideas</strong>.\n</p>",
+    "short_bio": "<h6>About Me</h6> <p>\n  Hi, I'm Haidong <span role=\"img\" aria-label=\"waving hand\">👋</span>!\n  You can call me Andrew. I love robots and am dedicated to integrating them safely and reliably into our lives.\n</p> <p>\n  I am a second-year undergraduate at the\n  <a href=\"https://www.nottingham.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Nottingham</a>,\n  pursuing a Bachelor of Engineering (Honours) degree.\n  I am currently a visiting student in the\n  <a href=\"https://www.polyu.edu.hk/fcms/\" target=\"_blank\" rel=\"noopener noreferrer\">Faculty of Computer and Mathematical Sciences</a>\n  at <a href=\"https://www.polyu.edu.hk/tc/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University (PolyU)</a>, advised by\n  <a href=\"https://scholar.google.com.hk/citations?user=e8io0fYAAAAJ\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>\n  (Fellow of IEEE/IET; Member of\n  <a href=\"https://euro-acad.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">EASA</a> and\n  <a href=\"https://thenaai.org/\" target=\"_blank\" rel=\"noopener noreferrer\">NAAI</a>).\n</p> <p>\n  I also spent a wonderful summer at\n  <a href=\"https://hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong University of Science and Technology (HKUST)</a>'s\n  <a href=\"https://ri.hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">Cheng Kar-Shun Robotics Institute</a>,\n  under the supervision of\n  <a href=\"https://personal.hkust-gz.edu.cn/junma/people-page.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Jun Ma</a>.\n  I am also an Undergraduate Researcher in the\n  <a href=\"https://sites.google.com/view/xiaocong-li/open-positions\" target=\"_blank\" rel=\"noopener noreferrer\">Robot Learning and Control Lab</a>\n  at\n  <a href=\"https://www.eitech.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Eastern Institute of Technology, Ningbo</a>,\n  advised by\n  <a href=\"https://sites.google.com/view/xiaocong-li/about\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Xiaocong Li</a>,\n  and work closely with\n  <a href=\"https://h-y-zhu.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Haiyue Zhu</a>\n  from <a href=\"https://www.a-star.edu.sg/\" target=\"_blank\" rel=\"noopener noreferrer\">A*STAR</a>.\n</p> <h6>Research Interests</h6> <p>\n  My research interests lie at the intersection of\n  <strong>robotic manipulation, generative models, and control theory</strong>,\n  with a primary focus on <strong>dexterous manipulation and generative control policies</strong>.\n  I am interested in how an understanding of geometric structure, contact interactions,\n  and action consequences can inform policy learning and closed-loop control,\n  enabling robots to adapt to changing environments, flexibly compose manipulation skills,\n  and reliably accomplish long-horizon tasks.\n  My long-term goal is to enable\n  <strong>robust, safe, and sustained robot deployment at scale in real-world environments</strong>\n  and to build\n  <strong>intelligent systems that perceive, reason about, and interact with the physical world</strong>.\n  More broadly, I am drawn to research that combines\n  <strong>scientific impact with the potential to inspire new ideas</strong>.\n</p>",
     "education": [
       {
         "name": "The Hong Kong Polytechnic University (PolyU)",
@@ -38,7 +38,7 @@
         "dept": "Faculty of Computer and Mathematical Sciences",
         "dept_url": "https://www.polyu.edu.hk/fcms/",
         "advisor": "Chenguang (Charlie) Yang",
-        "advisor_url": "https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/",
+        "advisor_url": "https://scholar.google.com.hk/citations?user=e8io0fYAAAAJ",
         "topics": "Robot manipulation; learning from demonstrations",
         "date": "May 2026 - Present",
         "url": "https://www.polyu.edu.hk/tc/"
@@ -135,7 +135,7 @@
         "Yaohua Zhou",
         "Jiayi Zhang",
         "Yuze Zhai",
-        "Xiaocong Li"
+        "Xiaocong Li#"
       ]
     },
     {
@@ -155,9 +155,9 @@
         "Haidong Huang*",
         "Lei Zhang",
         "Penghui Liu",
-        "Yinqi Liu"
+        "Yinqi Liu#"
       ],
-      "selected_order": 6
+      "selected_order": 8
     },
     {
       "title": "CoRDE: Concept-Prior Routed Diffusion Experts for Structural Generalization in Robot Manipulation",
@@ -181,9 +181,9 @@
         "Jiayi Zhang",
         "Jun Ma",
         "Haiyue Zhu",
-        "Xiaocong Li"
+        "Xiaocong Li#"
       ],
-      "selected_order": 1
+      "selected_order": 3
     },
     {
       "title": "Joint-Angle Invariance of Jacobian-Based Performance Indices for Serial Robotic Manipulators",
@@ -205,7 +205,7 @@
         "Xixin Zhao",
         "Haidong Huang",
         "Jiahu Qin",
-        "Xiaocong Li"
+        "Xiaocong Li#"
       ]
     },
     {
@@ -230,7 +230,7 @@
         "Shanliushui Gao",
         "Lei Zhang",
         "Xiaocong Li",
-        "Chenguang Yang"
+        "Chenguang Yang#"
       ]
     },
     {
@@ -255,9 +255,9 @@
         "Xuhan Miao",
         "Arash Ajoudani",
         "Lei Zhang",
-        "Xiaocong Li"
+        "Xiaocong Li#"
       ],
-      "selected_order": 4
+      "selected_order": 6
     },
     {
       "title": "Identifiability and Active Confirmation of Contact Mobility Transitions",
@@ -277,10 +277,10 @@
         "Haidong Huang",
         "Yaohua Zhou",
         "Jiayu Song",
-        "Yuji Yamakawa"
+        "Yuji Yamakawa#"
       ],
-      "selected_order": 5,
-      "pub_note_badge": "Oral Presentation"
+      "pub_note_badge": "Oral Presentation",
+      "selected_order": 7
     },
     {
       "title": "GeoPreserve: Preserving Action-Relevant Geometry in 3D Diffusion Policies for Long-Horizon Manipulation",
@@ -301,10 +301,10 @@
         "Heng Zhang",
         "Chenguang Yang",
         "Haiyue Zhu",
-        "Jun Ma",
-        "Xiaocong Li"
+        "Jun Ma#",
+        "Xiaocong Li#"
       ],
-      "selected_order": 2
+      "selected_order": 4
     },
     {
       "title": "MetaWorld-X: Semantic-Prior Expert Orchestration with Training-Time Latent Model-Based Improvement",
@@ -326,12 +326,12 @@
         "Jiashuo Luo",
         "Zhang Shunqi",
         "Chen Jiang",
-        "Chenguang Yang",
+        "Chenguang Yang#",
         "Arash Ajoudani",
         "Jianwei Zhang",
         "Lei Zhang"
       ],
-      "selected_order": 3
+      "selected_order": 5
     },
     {
       "title": "TA-SmolVLA: Tactile Tokens from Dense Force Fields for Contact-Rich Insertion",
@@ -354,7 +354,7 @@
         "Xingwei Chen",
         "Haidong Huang",
         "Yaohua Zhou",
-        "Xiaocong Li"
+        "Xiaocong Li#"
       ]
     },
     {
@@ -374,8 +374,56 @@
         "Haidong Huang",
         "Xixin Zhao",
         "Gang Xu",
-        "Xiaocong Li"
+        "Xiaocong Li#"
       ]
+    },
+    {
+      "cv_order": 13,
+      "title": "ActAtlas: Learning Adaptive Execution Atlases for Long-Horizon Robotic Manipulation",
+      "authors": [
+        "Haidong Huang",
+        "Yutong Shen",
+        "Heng Zhang",
+        "Xingwei Chen",
+        "Haiyue Zhu",
+        "Jun Ma",
+        "Ding Zhao#",
+        "Xiaocong Li#"
+      ],
+      "author_links": {
+        "Yutong Shen": "https://openreview.net/profile?id=~Yutong_Shen2",
+        "Heng Zhang": "https://openreview.net/profile?id=~Heng_Zhang15",
+        "Xingwei Chen": "https://openreview.net/profile?id=~Xingwei_Chen2",
+        "Haiyue Zhu": "https://openreview.net/profile?id=~Haiyue_Zhu1",
+        "Jun Ma": "https://openreview.net/profile?id=~Jun_Ma7",
+        "Ding Zhao": "https://openreview.net/profile?id=~Ding_Zhao1",
+        "Xiaocong Li": "https://openreview.net/profile?id=~Xiaocong_Li1"
+      },
+      "cover": "/assets/images/covers/Actatlas.png",
+      "abstract": "ActAtlas learns adaptive execution anchors and their directed transitions from demonstrations to condition a shared diffusion policy, distinguishing similar-looking states at different task stages and improving long-horizon manipulation.",
+      "cover_width": 1626,
+      "cover_height": 843,
+      "selected": true,
+      "selected_order": 1
+    },
+    {
+      "cv_order": 12,
+      "title": "T-FRAME: Tactile Force-aware Representation for Action-conditioned Manipulability Evolution",
+      "authors": [
+        "Xingwei Chen*",
+        "Haidong Huang*",
+        "Xiyuan Li",
+        "Xuqi Su",
+        "Shengjie Qiu",
+        "Tang Chong",
+        "Xiaocong Li#"
+      ],
+      "cover": "/assets/images/covers/T-FRAME.png",
+      "abstract": "T-FRAME combines physics-supervised prediction of action-conditioned contact consequences with uncertainty-aware, video-guided preference learning to train a recurrent tactile policy for reliable, efficient dexterous fastening through repeated contact renewal without online search.",
+      "cover_width": 1681,
+      "cover_height": 528,
+      "selected": true,
+      "selected_order": 2
     }
   ],
   "news": [
@@ -384,7 +432,7 @@
       "month": "Sep",
       "month_key": "2026-09",
       "emoji": "🎤",
-      "title": "I am honored to announce that the work I led as project leader—“<a href=\"publications.html#publication-4\">Teleoperation of Manipulators with Coupled Transmissions</a>”—has been accepted for oral presentation at the 5th Sensorimotor-Augmented Teleoperation Workshop at IROS!"
+      "title": "I am honored to announce that the work I led as project leader—“<a href=\"publications.html#publication-4\">Teleoperation of Manipulators with Coupled Transmissions</a>”—has been accepted for oral presentation at the <a href=\"https://hyy2566.github.io/iros-workshop-5th-sat-2026/\" target=\"_blank\" rel=\"noopener noreferrer\">5th Sensorimotor-Augmented Teleoperation Workshop at IROS</a>!"
     },
     {
       "year": 2026,
@@ -404,7 +452,7 @@
       "year": 2026,
       "month": "May",
       "month_key": "2026-05",
-      "title": "I am honored to join <a href=\"https://www.polyu.edu.hk/tc/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University (PolyU)</a> as a visiting student under the supervision of <a href=\"https://www.polyu.edu.hk/comp/people/academic-staff/prof-yang-chenguang-charlie/\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>!",
+      "title": "I am honored to join <a href=\"https://www.polyu.edu.hk/tc/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University (PolyU)</a> as a visiting student under the supervision of <a href=\"https://scholar.google.com.hk/citations?user=e8io0fYAAAAJ\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>!",
       "emoji": "🦿"
     },
     {
