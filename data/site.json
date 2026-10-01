@@ -404,7 +404,11 @@
       "cover_width": 1626,
       "cover_height": 843,
       "selected": true,
-      "selected_order": 1
+      "selected_order": 1,
+      "pub_pre": "Submitted to ",
+      "pub": "The Fifteenth International Conference on Learning Representations (ICLR)",
+      "pub_date": "2027",
+      "year": 2027
     },
     {
       "cv_order": 12,
@@ -423,7 +427,11 @@
       "cover_width": 1681,
       "cover_height": 528,
       "selected": true,
-      "selected_order": 2
+      "selected_order": 2,
+      "pub_pre": "Submitted to ",
+      "pub": "The Fifteenth International Conference on Learning Representations (ICLR)",
+      "pub_date": "2027",
+      "year": 2027
     }
   ],
   "news": [
