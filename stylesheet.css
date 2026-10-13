@@ -246,14 +246,15 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
 .profile-continuation { margin-top: 12px; }
 .profile-intro a, .research-interests a, .news-list a, .institution-copy p a, .services-list a { color: #527f9f; }
 .profile-intro a:hover, .news-list a:hover, .institution-copy p a:hover, .services-list a:hover { color: var(--accent-orange); }
-.research-interests { margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--line); }
+.research-interests { margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line); }
 .profile-subheading { font-family: var(--font-heading); font-size: 24px; font-weight: 400; margin: 0 0 12px; }
-.research-interests p { font-size: 16.5px; line-height: 1.75; color: var(--text-secondary); }
+.research-interests .profile-subheading { margin-bottom: 8px; }
+.research-interests p { font-size: 16.5px; line-height: 1.6; color: var(--text-secondary); }
 .research-interests strong { color: var(--text-primary); }
-.research-directions { margin: 18px 0 22px; padding-left: 22px; display: grid; gap: 18px; }
+.research-directions { margin: 10px 0 12px; padding-left: 22px; display: grid; gap: 8px; }
 .research-directions li { padding-left: 3px; }
 .research-directions li::marker { color: #7893ac; }
-.research-direction-title { display: block; margin-bottom: 4px; }
+.research-direction-title { display: inline; }
 .beyond-layout p { font-size: 16.5px; line-height: 1.7; }
 .beyond-layout p + p { margin-top: 16px; }
 .beyond-layout a { color: #527f9f; }
