@@ -11,7 +11,7 @@
     "portrait_url": "/assets/images/photos/haidong-huang.jpg",
     "favicon_url": "/assets/images/favicon.svg",
     "short_bio_text_justify": false,
-    "short_bio": "<h6>About Me</h6> <p>\n  Hi, I'm Haidong <span role=\"img\" aria-label=\"waving hand\">👋</span>!\n  You can call me Andrew. I love robots and am dedicated to integrating them safely and reliably into our lives.\n</p> <p>\n  I am a second-year undergraduate at the\n  <a href=\"https://www.nottingham.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Nottingham</a>,\n  pursuing a Bachelor of Engineering (Honours) degree.\n  I am currently a visiting student in the\n  <a href=\"https://www.polyu.edu.hk/fcms/\" target=\"_blank\" rel=\"noopener noreferrer\">Faculty of Computer and Mathematical Sciences</a>\n  at <a href=\"https://www.polyu.edu.hk/tc/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University (PolyU)</a>, advised by\n  <a href=\"https://scholar.google.com.hk/citations?user=e8io0fYAAAAJ\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>\n  (Fellow of IEEE/IET; Member of\n  <a href=\"https://euro-acad.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">EASA</a> and\n  <a href=\"https://thenaai.org/\" target=\"_blank\" rel=\"noopener noreferrer\">NAAI</a>).\n</p> <p>\n  I also spent a wonderful summer at\n  <a href=\"https://hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong University of Science and Technology (HKUST)</a>'s\n  <a href=\"https://ri.hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">Cheng Kar-Shun Robotics Institute</a>,\n  under the supervision of\n  <a href=\"https://personal.hkust-gz.edu.cn/junma/people-page.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Jun Ma</a>.\n  I am also an Undergraduate Researcher in the\n  <a href=\"https://sites.google.com/view/xiaocong-li/open-positions\" target=\"_blank\" rel=\"noopener noreferrer\">Robot Learning and Control Lab</a>\n  at\n  <a href=\"https://www.eitech.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Eastern Institute of Technology, Ningbo</a>,\n  advised by\n  <a href=\"https://sites.google.com/view/xiaocong-li/about\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Xiaocong Li</a>,\n  and work closely with\n  <a href=\"https://h-y-zhu.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Haiyue Zhu</a>\n  from <a href=\"https://www.a-star.edu.sg/\" target=\"_blank\" rel=\"noopener noreferrer\">A*STAR</a>.\n</p> <h6>Research Interests</h6> <p>\n  My research interests lie at the intersection of\n  <strong>robotic manipulation, generative models, and control theory</strong>,\n  with a primary focus on <strong>dexterous manipulation and generative control policies</strong>.\n  I am interested in how an understanding of geometric structure, contact interactions,\n  and action consequences can inform policy learning and closed-loop control,\n  enabling robots to adapt to changing environments, flexibly compose manipulation skills,\n  and reliably accomplish long-horizon tasks.\n  My long-term goal is to enable\n  <strong>robust, safe, and sustained robot deployment at scale in real-world environments</strong>\n  and to build\n  <strong>intelligent systems that perceive, reason about, and interact with the physical world</strong>.\n  More broadly, I am drawn to research that combines\n  <strong>scientific impact with the potential to inspire new ideas</strong>.\n</p>",
+    "short_bio": "<h6>About Me</h6> <p>\n  Hi, I'm Haidong <span role=\"img\" aria-label=\"waving hand\">👋</span>!\n  You can call me Andrew. I love robots and am dedicated to integrating them safely and reliably into our lives.\n</p> <p>\n  I am a junior (third-year) undergraduate at the\n  <a href=\"https://www.nottingham.ac.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Nottingham</a>,\n  pursuing a Bachelor of Engineering (Honours) degree.\n  I am currently a visiting student in the\n  <a href=\"https://www.polyu.edu.hk/fcms/\" target=\"_blank\" rel=\"noopener noreferrer\">Faculty of Computer and Mathematical Sciences</a>\n  at <a href=\"https://www.polyu.edu.hk/tc/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong Polytechnic University (PolyU)</a>, advised by\n  <a href=\"https://scholar.google.com.hk/citations?user=e8io0fYAAAAJ\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Chenguang (Charlie) Yang</a>\n  (Fellow of IEEE/IET; Member of\n  <a href=\"https://euro-acad.eu/\" target=\"_blank\" rel=\"noopener noreferrer\">EASA</a> and\n  <a href=\"https://thenaai.org/\" target=\"_blank\" rel=\"noopener noreferrer\">NAAI</a>).\n</p> <p>\n  I also spent a wonderful summer at\n  <a href=\"https://hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">The Hong Kong University of Science and Technology (HKUST)</a>'s\n  <a href=\"https://ri.hkust.edu.hk/\" target=\"_blank\" rel=\"noopener noreferrer\">Cheng Kar-Shun Robotics Institute</a>,\n  under the supervision of\n  <a href=\"https://personal.hkust-gz.edu.cn/junma/people-page.html\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Jun Ma</a>.\n  I am also an Undergraduate Researcher in the\n  <a href=\"https://sites.google.com/view/xiaocong-li/open-positions\" target=\"_blank\" rel=\"noopener noreferrer\">Robot Learning and Control Lab</a>\n  at\n  <a href=\"https://www.eitech.edu.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Eastern Institute of Technology, Ningbo</a>,\n  advised by\n  <a href=\"https://sites.google.com/view/xiaocong-li/about\" target=\"_blank\" rel=\"noopener noreferrer\">Prof. Xiaocong Li</a>,\n  and work closely with\n  <a href=\"https://h-y-zhu.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">Dr. Haiyue Zhu</a>\n  from <a href=\"https://www.a-star.edu.sg/\" target=\"_blank\" rel=\"noopener noreferrer\">A*STAR</a>.\n</p> <h6>Research Interests</h6> <p>My research interests lie at the intersection of <strong>robotic manipulation, generative models, and control theory</strong>, with a primary focus on <strong>dexterous manipulation and generative control policies</strong>. Three complementary directions are:</p>\n<ul class=\"research-directions\">\n  <li><p><strong class=\"research-direction-title\">Dexterous Manipulation:</strong> Learning expressive policies for high-degree-of-freedom robotic hands through human coordination priors and efficient exploration. Modeling how finger coordination and evolving contacts shape feasible object motions, and integrating visual and tactile feedback with action-consequence prediction to adapt contact configurations and forces, balancing grasp stability with flexible in-hand manipulation and tool use across objects and tasks.</p></li>\n  <li><p><strong class=\"research-direction-title\">Composable Skills and Reasoning:</strong> Learning reusable skills and local models of their applicability and action consequences to support selection, composition, and planning at inference time under task goals and constraints. Establishing compatibility across skill transitions so that current actions create suitable conditions for subsequent stages, enabling reliable long-horizon manipulation and compositional generalization.</p></li>\n  <li><p><strong class=\"research-direction-title\">Generative Policies and Closed-Loop Control:</strong> Developing generative policies informed by geometric structure, action consequences, and control constraints, balancing behavioral diversity, physical feasibility, and computational efficiency. Integrating efficient inference with real-time feedback to adapt to environmental changes, correct execution errors, and support reliable manipulation under uncertainty.</p></li>\n</ul>\n<p>The long-term goal is to enable <strong>robust, safe, and sustained robot deployment at scale in real-world environments</strong> and to build <strong>intelligent systems that perceive, reason about, and interact with the physical world</strong>. The broader aim is to pursue research that combines <strong>scientific impact with the potential to inspire new ideas</strong>.</p>",
     "education": [
       {
         "name": "The Hong Kong Polytechnic University (PolyU)",
@@ -142,7 +142,7 @@
       "title": "ALAS: Adaptive Long-Horizon Action Synthesis via Disentangled Environment and Self-State Representations",
       "cv_order": 5,
       "year": 2026,
-      "selected": true,
+      "selected": false,
       "pub_pre": "Submitted to ",
       "pub": "IEEE Humanoid",
       "pub_date": "2026",
@@ -156,8 +156,7 @@
         "Lei Zhang",
         "Penghui Liu",
         "Yinqi Liu#"
-      ],
-      "selected_order": 8
+      ]
     },
     {
       "title": "CoRDE: Concept-Prior Routed Diffusion Experts for Structural Generalization in Robot Manipulation",
@@ -267,7 +266,7 @@
       "pub_pre": "Submitted to ",
       "pub": "IEEE International Conference on Robotics and Automation (ICRA)",
       "pub_date": "2027",
-      "pub_note": "RSS 2026 Workshop on Geometry of Motion",
+      "pub_note": "RSS 2026 Workshop on The Geometry of Motion: Physics-Informed Structures for Learning and Control",
       "cover": "/assets/images/covers/contact-mobility.png",
       "cover_width": 1387,
       "cover_height": 784,
@@ -280,7 +279,9 @@
         "Yuji Yamakawa#"
       ],
       "pub_note_badge": "Oral Presentation",
-      "selected_order": 7
+      "selected_order": 7,
+      "pub_note_url": "https://sites.google.com/view/rss26-geometry/home",
+      "pub_note_emphasis": true
     },
     {
       "title": "GeoPreserve: Preserving Action-Relevant Geometry in 3D Diffusion Policies for Long-Horizon Manipulation",
@@ -441,6 +442,13 @@
       "month_key": "2026-09",
       "emoji": "🎤",
       "title": "I am honored to announce that the work I led as project leader—“<a href=\"publications.html#publication-4\">Teleoperation of Manipulators with Coupled Transmissions</a>”—has been accepted for oral presentation at the <a href=\"https://hyy2566.github.io/iros-workshop-5th-sat-2026/\" target=\"_blank\" rel=\"noopener noreferrer\">5th Sensorimotor-Augmented Teleoperation Workshop at IROS</a>!"
+    },
+    {
+      "year": 2026,
+      "month": "Jul",
+      "month_key": "2026-07",
+      "emoji": "🏆",
+      "title": "<a href=\"publications.html#publication-11\">Identifiability and Active Confirmation of Contact Mobility Transitions</a> has been accepted for an <strong>oral presentation</strong> at the RSS 2026 Workshop on <a href=\"https://sites.google.com/view/rss26-geometry/home\" target=\"_blank\" rel=\"noopener noreferrer\">The Geometry of Motion: Physics-Informed Structures for Learning and Control</a>!"
     },
     {
       "year": 2026,

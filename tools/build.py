@@ -90,7 +90,8 @@ def paper_html(paper, prefix, rank):
     venue = (f'<p class="venue-full">{text(paper.get("pub_pre", ""))}{text(paper["pub"])}{paper.get("pub_post", "")} {text(paper.get("pub_date", ""))} {badge}</p>'
              if paper.get('pub') else '')
     note_badge = f' <span class="paper-badge">{text(paper["pub_note_badge"])}</span>' if paper.get('pub_note_badge') else ''
-    note = f'<p class="paper-note">{text(paper["pub_note"])}{note_badge}</p>' if paper.get('pub_note') else ''
+    note_class = 'paper-note paper-note-emphasis' if paper.get('pub_note_emphasis') else 'paper-note'
+    note = f'<p class="{note_class}">{link(paper["pub_note"], paper.get("pub_note_url"))}{note_badge}</p>' if paper.get('pub_note') else ''
     highlight = f'<p class="paper-highlight">{text(paper["highlight"])}</p>' if paper.get('highlight') else ''
     links = []
     for label, value in paper.get('links', {}).items():
