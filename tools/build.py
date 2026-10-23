@@ -32,8 +32,7 @@ def section(identifier, title, content, extra='', label=None):
 def profile_html(profile, prefix):
     biography, interests = profile['short_bio'].split('<h6>Research Interests</h6>')
     paragraphs = re.findall(r'<p>.*?</p>', biography, re.S)
-    introduction = ''.join(paragraphs[:2]).replace('<p>', '<p class="profile-intro">')
-    continuation = ''.join(paragraphs[2:]).replace('<p>', '<p class="profile-intro">')
+    introduction = ''.join(paragraphs).replace('<p>', '<p class="profile-intro">')
     contact = []
     email = ''.join(f'&#{ord(c)};' for c in profile['email'])
     contact.append(f'<a class="profile-link" href="mailto:{email}"><img src="{prefix}assets/files/icon/email.png" width="22" height="22" alt="">Email</a>')
@@ -46,16 +45,18 @@ def profile_html(profile, prefix):
         if profile.get(key):
             contact.append(f'<a class="profile-link" href="{text(profile[key])}" target="_blank" rel="noopener noreferrer"><span class="profile-monogram {key}-icon" aria-hidden="true">{monogram}</span>{label}</a>')
     return f'''<section id="about" class="page-section profile-section" data-nav-section data-nav-label="About" tabindex="-1">
+      <header class="profile-heading">
+        <h1 class="name">{text(profile['primary_name'])}</h1>
+        <p class="profile-tagline">{text(profile['secondary_name'])}</p>
+      </header>
       <div class="profile">
-        <div class="profile-copy">
-          <h1 class="name">{text(profile['primary_name'])}</h1>
-          <p class="profile-tagline">{text(profile['secondary_name'])}</p>
-          {introduction}
-        </div>
         <figure class="profile-portrait"><a href="{asset(profile['portrait_url'], prefix)}" data-figure data-caption="{text(profile['primary_name'])}" aria-label="Enlarge portrait"><img class="avatar" src="{asset(profile['portrait_url'], prefix)}" alt="{text(profile['primary_name'])}" width="602" height="602" fetchpriority="high" decoding="async"></a></figure>
+        <div class="profile-copy">
+          <h2 class="profile-subheading">About Me</h2>
+          {introduction}
+          <div class="profile-links" aria-label="Contact and profiles">{''.join(contact)}</div>
+        </div>
       </div>
-      <div class="profile-continuation">{continuation}</div>
-      <div class="profile-links" aria-label="Contact and profiles">{''.join(contact)}</div>
       <div class="research-interests"><h2 class="profile-subheading">Research Interests</h2>{interests}</div>
     </section>'''
 
