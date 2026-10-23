@@ -2,7 +2,7 @@
 
 English personal website: **https://haidong-huang.github.io/**
 
-Uses the supplied TidalHarley homepage design, with a section index, local fonts, selected/all publication views, and full-size figure previews. The Language section is omitted. Miscellaneous contains Haidong's interests and personal quotation. The previous site's personal content and images are preserved.
+Uses an independently implemented single-column design inspired by [Yichuan Wang's homepage](https://yichuan-w.github.io/): a compact top navigation, a right-side portrait, restrained purple links, and figure-and-text publication rows. Selected/all publication views and full-size figure previews remain available. All personal content and images are preserved. No MkDocs or Material package is required.
 
 ## Preview
 
@@ -21,7 +21,7 @@ No Ruby, Node.js, package installation or third-party Python library is required
 - `data/site.json`: biography, contact links, education, experience, publications, News, awards, academic services and Miscellaneous.
 - `templates/page.html`: shared page structure and metadata.
 - `tools/build.py`: section rendering; preserves the full text from the content file.
-- `stylesheet.css`: the supplied template's style and responsive layout adaptations.
+- `stylesheet.css`: the single-column design and responsive layout.
 - `navigation.js`, `interactions.js`: navigation, selected/all publications and figure previews.
 - `assets/`: only the images, local font and icons used by this site.
 
