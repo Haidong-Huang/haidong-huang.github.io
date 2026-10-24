@@ -127,29 +127,26 @@ def papers_html(papers, prefix, home=True):
 
 def institutions_html(items, prefix, research=False):
     rows = []
-    dimensions = {'polyu.png': (1002, 192), 'nottingham.png': (960, 389), 'hkust.png': (960, 308), 'eit.png': (500, 72)}
+    dimensions = {'polyu logo.webp': (500, 500), 'nottingham.png': (960, 389), 'hkust.png': (960, 308), 'eit logo.png': (1821, 1141)}
     for item in items:
         width, height = dimensions[Path(item['logo']).name]
         details = []
-        if item.get('dept') and not research:
+        if item.get('dept'):
             details.append(f'<p>{link(item["dept"], item.get("dept_url"))}</p>')
-        position = text(item['position'])
-        if research and item.get('dept'):
-            position += ' · ' + link(item['dept'], item.get('dept_url'))
-        details.append(f'<p>{position}</p>')
         if item.get('lab'):
             details.append(f'<p>{link(item["lab"], item.get("lab_url"))}</p>')
         if item.get('advisor'):
             details.append(f'<p class="institution-detail">Advised by Prof. {link(item["advisor"], item.get("advisor_url"))}</p>')
         if item.get('topics'):
             details.append(f'<p class="institution-detail"><strong>Research:</strong> {text(item["topics"])}</p>')
-        rows.append(f'''<div class="institution-row">
+        rows.append(f'''<li class="timeline-item"><div class="institution-row">
           <div class="institution-logo"><img src="{asset(item['logo'], prefix)}" alt="{text(item['name'])} logo" width="{width}" height="{height}" loading="lazy" decoding="async"></div>
-          <div class="institution-copy"><h3>{link(item['name'], item.get('url'))}</h3>{''.join(details)}
+          <div class="institution-copy"><h3>{text(item['position'])}</h3>
+          <p class="institution-school">{link(item['name'], item.get('url'))}</p>{''.join(details)}
           <p class="institution-date">{text(item['date'])}</p></div>
-        </div>''')
+        </div></li>''')
     return section('experience' if research else 'education', 'Research Experience' if research else 'Education',
-                   '<div class="experience-list">' + ''.join(rows) + '</div>', label='Experience' if research else 'Education')
+                   '<ol class="experience-list institution-timeline">' + ''.join(rows) + '</ol>', 'timeline-section', label='Experience' if research else 'Education')
 
 
 def miscellaneous_html(miscellaneous):
