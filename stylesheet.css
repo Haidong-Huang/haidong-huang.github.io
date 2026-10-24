@@ -36,7 +36,7 @@ sup { font-size: .72em; line-height: 0; }
 .section-nav__inner { width: min(var(--page-width), calc(100% - 80px)); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 62px; }
 .site-brand { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; color: var(--text-primary); font-size: 15px; font-weight: 650; }
 .site-brand:hover { color: var(--link-color); text-decoration: none; }
-.brand-mark { display: grid; place-items: center; width: 29px; height: 29px; color: var(--link-color); background: #f0e9f6; border-radius: 7px; font-size: 11px; letter-spacing: .03em; }
+.brand-mark { display: grid; place-items: center; width: 29px; height: 29px; font-size: 23px; line-height: 1; }
 .section-nav { min-width: 0; }
 .section-nav__track { overflow-x: auto; scrollbar-width: none; }
 .section-nav__track::-webkit-scrollbar { display: none; }
@@ -61,7 +61,8 @@ sup { font-size: .72em; line-height: 0; }
 .profile-link { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; }
 .profile-link img { width: 19px; height: 19px; object-fit: contain; }
 .profile-monogram { display: inline-flex; width: 19px; height: 19px; align-items: center; justify-content: center; border-radius: 3px; color: white; background: var(--link-color); font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 1; }
-.zhihu-icon { font-family: "Microsoft YaHei", sans-serif; }
+.linkedin-icon { background: #0a66c2; }
+.zhihu-icon { background: #1772f6; font-family: "Microsoft YaHei", sans-serif; }
 .research-interests { margin-top: 27px; }
 .research-interests .profile-subheading { font-size: 22px; margin-bottom: 10px; }
 .research-interests p { line-height: 1.6; }
@@ -104,17 +105,27 @@ sup { font-size: .72em; line-height: 0; }
 .paper-links-group { display: flex; flex-wrap: wrap; gap: 8px 17px; margin-top: 9px; font-size: 14px; }
 .publication-directory { margin-top: 12px; font-size: 14px; }
 
-/* Education, experience and service remain easy to scan. */
-.institution-row { display: grid; grid-template-columns: 170px minmax(0, 1fr); align-items: center; gap: 32px; padding: 17px 0; }
-.institution-row:first-child { padding-top: 0; }
-.institution-row:last-child { padding-bottom: 0; }
-.institution-logo { width: 170px; }
-.institution-logo img { width: 100%; height: auto; max-height: 90px; object-fit: contain; }
-.institution-copy h3 { margin: 0 0 3px; font-size: 17px; font-weight: 600; line-height: 1.5; }
+/* Centered education and experience cards with a continuous timeline. */
+.timeline-section { --timeline-color: #2468b8; --timeline-bg: #f6f6f7; padding: 27px 32px 32px; border-radius: 7px; background: var(--timeline-bg); }
+.timeline-section .section-title { padding-left: 12px; border-left: 4px solid var(--timeline-color); color: var(--timeline-color); }
+.institution-timeline { width: min(880px, calc(100% - 60px)); list-style: none; margin: 26px auto 0; padding: 0; }
+.timeline-item { position: relative; margin: 0 0 28px; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-item::before { position: absolute; left: -30px; top: 0; bottom: -28px; width: 1px; background: var(--timeline-color); content: ""; }
+.timeline-item:first-child::before { top: 50%; }
+.timeline-item:last-child::before { bottom: 50%; }
+.timeline-item::after { position: absolute; left: -37px; top: 50%; width: 15px; height: 15px; border: 1px solid var(--timeline-color); border-radius: 50%; background: var(--timeline-bg); box-shadow: 0 0 0 7px var(--timeline-bg); transform: translateY(-50%); content: ""; }
+.institution-row { display: grid; grid-template-columns: 126px minmax(0, 1fr); align-items: center; gap: 30px; min-height: 174px; padding: 25px 30px; background: #fff; border: 1px solid #e0e0e3; border-radius: 6px; box-shadow: 0 2px 5px #25213312; }
+.institution-logo { width: 126px; display: flex; align-items: center; justify-content: center; }
+.institution-logo img { width: 100%; height: auto; max-height: 118px; object-fit: contain; }
+.institution-copy h3 { margin: 0 0 4px; color: #5c5c65; font-size: 18px; font-weight: 650; line-height: 1.45; }
 .institution-copy p { color: var(--text-secondary); font-size: 15px; line-height: 1.6; }
 .institution-copy p + p { margin-top: 2px; }
+.institution-copy .institution-school { margin-bottom: 5px; font-size: 17px; line-height: 1.5; }
+.institution-school a { color: #62626e; }
+.institution-school a:hover { color: var(--timeline-color); }
 .institution-copy .institution-detail { font-size: 14px; }
-.institution-copy .institution-date { margin-top: 5px; font-size: 13.5px; font-style: italic; color: var(--text-tertiary); }
+.institution-copy .institution-date { margin-top: 8px; font-size: 14px; color: var(--text-tertiary); }
 .awards-list, .services-list { list-style: none; padding: 0; margin: 0; }
 .awards-list li { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 16px; margin-top: 9px; font-size: 15.5px; }
 .award-year { font-size: 14px; color: var(--text-tertiary); }
@@ -158,6 +169,10 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .profile { grid-template-columns: minmax(0, 1fr) 148px; gap: 24px; }
   .section-title { font-size: 24px; }
   .paper-row { grid-template-columns: 155px minmax(0, 1fr); gap: 20px; }
+  .timeline-section { padding: 23px 21px 26px; }
+  .institution-row { grid-template-columns: 100px minmax(0, 1fr); gap: 23px; padding: 23px; }
+  .institution-logo { width: 100px; }
+  .institution-logo img { max-height: 100px; }
 }
 @media (max-width: 600px) {
   .page-shell, .section-nav__inner { width: calc(100% - 36px); }
@@ -187,12 +202,20 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .paper-figure img { max-height: 180px; }
   .papertitle { font-size: 17px; }
   .paper-description { font-size: 15px; }
-  .institution-row { grid-template-columns: 102px minmax(0, 1fr); gap: 17px; padding: 15px 0; }
-  .institution-logo { width: 102px; }
-  .institution-logo img { max-height: 65px; }
+  .timeline-section { padding: 20px 14px 24px; }
+  .timeline-section .section-title { font-size: 22px; padding-left: 10px; }
+  .institution-timeline { width: calc(100% - 32px); margin-top: 21px; }
+  .timeline-item { margin-bottom: 22px; }
+  .timeline-item::before { left: -16px; bottom: -22px; }
+  .timeline-item::after { left: -21px; width: 11px; height: 11px; box-shadow: 0 0 0 5px var(--timeline-bg); }
+  .institution-row { grid-template-columns: 64px minmax(0, 1fr); gap: 14px; padding: 18px 14px; min-height: 145px; }
+  .institution-logo { width: 64px; }
+  .institution-logo img { max-height: 70px; }
   .institution-copy h3 { font-size: 15.5px; }
   .institution-copy p { font-size: 14px; }
+  .institution-copy .institution-school { font-size: 14.5px; }
   .institution-copy .institution-detail { font-size: 13px; }
+  .institution-copy .institution-date { font-size: 12.5px; }
   .awards-list li, .services-list li { grid-template-columns: 68px minmax(0, 1fr); gap: 11px; font-size: 15px; }
   .service-role, .award-year { font-size: 13px; }
   .site-footer { align-items: start; font-size: 11px; }
@@ -201,8 +224,10 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
 @media (max-width: 360px) {
   .name { font-size: 28px; }
   .profile-portrait { width: 100px; margin-left: 13px; }
-  .institution-row { grid-template-columns: 83px minmax(0, 1fr); gap: 13px; }
-  .institution-logo { width: 83px; }
+  .timeline-section { padding-left: 10px; padding-right: 10px; }
+  .timeline-section .section-title { font-size: 20px; }
+  .institution-row { grid-template-columns: 52px minmax(0, 1fr); padding: 16px 11px; gap: 11px; }
+  .institution-logo { width: 52px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -213,6 +238,7 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .page-shell { width: 100%; }
   .page-section { margin-top: 24px; }
   .paper-row { break-inside: avoid; }
+  .institution-row { break-inside: avoid; box-shadow: none; }
   .paper-row[hidden] { display: grid !important; }
   a { color: inherit; }
 }
