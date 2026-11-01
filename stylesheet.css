@@ -118,6 +118,8 @@ sup { font-size: .72em; line-height: 0; }
 .institution-row { display: grid; grid-template-columns: 156px minmax(0, 1fr); align-items: center; gap: 22px; min-height: 124px; padding: 16px 20px; background: #fff; border: 1px solid var(--line); border-radius: 5px; box-shadow: 0 1px 3px #25213308; }
 .institution-logo { width: 156px; height: 76px; display: flex; align-items: center; justify-content: center; }
 .institution-logo img { width: 100%; height: 100%; object-fit: contain; }
+/* Give CMU's fine-line seal similar visual weight to PolyU's solid mark. */
+#experience .institution-logo img[src$="Carnegie_Mellon_University_Logo_full.png"] { transform: scale(1.2); }
 .institution-copy h3 { margin: 0 0 3px; color: #5c5c65; font-size: 16px; font-weight: 650; line-height: 1.45; }
 .institution-copy p { color: var(--text-secondary); font-size: 14px; line-height: 1.55; }
 .institution-copy p + p { margin-top: 2px; }
