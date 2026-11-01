@@ -113,7 +113,7 @@ def paper_html(paper, prefix, rank):
 
 
 def papers_html(papers, prefix, home=True):
-    ordered = sorted(papers, key=lambda p: p['cv_order'], reverse=True)
+    ordered = sorted(papers, key=lambda p: (p.get('display_order', 1), -p['cv_order']))
     rows = ''.join(paper_html(p, prefix, i) for i, p in enumerate(ordered))
     button = '<button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="true" hidden>All Research Papers</button>' if home else ''
     return f'''<section id="research" class="page-section research-section" data-nav-section data-nav-label="Publications" tabindex="-1">
@@ -127,7 +127,7 @@ def papers_html(papers, prefix, home=True):
 
 def institutions_html(items, prefix, research=False):
     rows = []
-    dimensions = {'polyu logo.webp': (500, 500), 'nottingham.png': (960, 389), 'hkust.png': (960, 308), 'eit logo.png': (1821, 1141)}
+    dimensions = {'polyu logo.webp': (500, 500), 'nottingham.png': (960, 389), 'hkust-new.png': (256, 256), 'eit logo.png': (1821, 1141), 'Carnegie_Mellon_University_Logo_full.png': (5000, 5000)}
     for item in items:
         width, height = dimensions[Path(item['logo']).name]
         details = []
@@ -157,6 +157,13 @@ def miscellaneous_html(miscellaneous):
     return section('beyond', 'Miscellaneous', content)
 
 
+def award_html(award):
+    label = text(award['name'])
+    if award.get('link_text') and award.get('url'):
+        label = label.replace(text(award['link_text']), link(award['link_text'], award['url']), 1)
+    return f'<li><span class="award-year">{award["date"]}</span><span>{label}</span></li>'
+
+
 def build():
     content = json.loads((ROOT / 'data/site.json').read_text(encoding='utf-8'))
     profile = content['profile']
@@ -182,7 +189,7 @@ def build():
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(rendered, encoding='utf-8')
 
-    awards = '<ul class="awards-list">' + ''.join(f'<li><span class="award-year">{a["date"]}</span><span>{text(a["name"])}</span></li>' for a in profile['awards']) + '</ul>'
+    awards = '<ul class="awards-list">' + ''.join(award_html(a) for a in profile['awards']) + '</ul>'
     services = '<ul class="services-list">' + ''.join(f'<li><span class="service-role">{text(s["role"])}</span><span>{link(s["name"], s.get("url"))}<span class="service-edition">{text(s["abbreviation"])}</span></span></li>' for s in profile['academic_services']) + '</ul>'
     home = profile_html(profile, '') + news_html(content['news']) + papers_html(content['publications'], '')
     home += section('honors', 'Honors & Awards', awards, label='Honors')
