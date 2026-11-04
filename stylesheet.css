@@ -63,13 +63,25 @@ sup { font-size: .72em; line-height: 0; }
 .profile-monogram { display: inline-flex; width: 19px; height: 19px; align-items: center; justify-content: center; border-radius: 3px; color: white; background: var(--link-color); font-family: Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 1; }
 .linkedin-icon { background: #0a66c2; }
 .zhihu-icon { background: #1772f6; font-family: "Microsoft YaHei", sans-serif; }
-.research-interests { margin-top: 27px; }
-.research-interests .profile-subheading { font-size: 22px; margin-bottom: 10px; }
-.research-interests p { line-height: 1.6; }
-.research-directions { display: grid; gap: 8px; margin: 10px 0 12px; padding-left: 21px; }
-.research-directions li { padding-left: 3px; }
-.research-directions li::marker { color: #9465b0; }
-.research-direction-title { display: inline; }
+.research-interests { margin-top: 38px; scroll-margin-top: 92px; }
+.research-interests .profile-subheading { font-size: 24px; margin-bottom: 17px; }
+.research-interests p { line-height: 1.75; }
+.research-vision { max-width: 1080px; padding-left: 20px; border-left: 3px solid #cbb2dd; font-size: 17px; color: var(--text-secondary); }
+.research-vision strong { color: var(--text-primary); }
+.research-directions { list-style: none; margin: 28px 0 0; padding: 0; }
+.research-direction { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 44px; padding: 25px 0; border-top: 1px solid var(--line); }
+.research-direction-heading, .research-direction-copy { min-width: 0; }
+.research-direction-number { display: block; margin-bottom: 9px; color: #856397; font-size: 12px; font-weight: 600; letter-spacing: .12em; font-variant-numeric: tabular-nums; }
+.research-direction-title { margin: 0; color: #493554; font-size: 19px; line-height: 1.45; font-weight: 650; letter-spacing: -.015em; text-wrap: balance; }
+.research-direction-title span { white-space: nowrap; }
+.research-direction-copy { color: var(--text-secondary); }
+.research-direction-copy p + p { margin-top: 12px; }
+.research-direction-copy p:first-child { color: var(--text-primary); }
+.research-direction-copy a { font-weight: 600; text-decoration: underline; text-decoration-color: #d2bedf; text-decoration-thickness: 1px; white-space: nowrap; }
+.research-direction-copy a:hover { text-decoration-color: currentColor; }
+.research-outlook { padding: 17px 21px; border-left: 3px solid #cbb2dd; background: var(--surface); color: var(--text-secondary); }
+.research-outlook p + p { margin-top: 3px; }
+.research-outlook strong { color: #493554; }
 
 /* News and section headings. */
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 10px 20px; margin-bottom: 17px; }
@@ -166,11 +178,15 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .section-nav { width: 100%; }
   .section-nav__list { gap: 23px; }
   .section-nav__link { padding-top: 11px; padding-bottom: 10px; }
-  .page-section, .paper-row { scroll-margin-top: 115px; }
+  .page-section, .paper-row, .research-interests { scroll-margin-top: 115px; }
   .profile-section { margin-top: 28px; }
   .profile-heading { margin-bottom: 22px; }
   .profile { grid-template-columns: minmax(0, 1fr) 148px; gap: 24px; }
   .section-title { font-size: 24px; }
+  .research-direction { grid-template-columns: 1fr; gap: 13px; padding: 23px 0; }
+  .research-direction-heading { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 12px; align-items: baseline; }
+  .research-direction-number { margin-bottom: 0; }
+  .research-direction-title { text-wrap: initial; }
   .paper-row { grid-template-columns: 155px minmax(0, 1fr); gap: 20px; }
   .institution-row { grid-template-columns: 132px minmax(0, 1fr); gap: 20px; padding: 15px 18px; }
   .institution-logo { width: 132px; height: 66px; }
@@ -190,8 +206,13 @@ body:has(.figure-dialog[open]) { overflow: hidden; }
   .profile-intro { margin-top: 11px; }
   .profile-links { clear: both; gap: 12px 19px; margin-top: 18px; }
   .profile-link { font-size: 13.5px; }
-  .research-interests { margin-top: 24px; }
-  .research-interests .profile-subheading { font-size: 21px; }
+  .research-interests { margin-top: 30px; }
+  .research-interests .profile-subheading { font-size: 22px; margin-bottom: 15px; }
+  .research-vision { padding-left: 15px; font-size: 16px; }
+  .research-directions { margin-top: 23px; }
+  .research-direction-title { font-size: 18px; }
+  .research-direction-copy { font-size: 15.5px; }
+  .research-outlook { padding: 15px 16px; font-size: 15px; }
   .section-heading { margin-bottom: 14px; }
   .section-title { font-size: 23px; }
   .news-list li { grid-template-columns: 69px minmax(0, 1fr); gap: 10px; font-size: 15px; margin-top: 12px; }

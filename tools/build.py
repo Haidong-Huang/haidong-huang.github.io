@@ -57,7 +57,7 @@ def profile_html(profile, prefix):
           <div class="profile-links" aria-label="Contact and profiles">{''.join(contact)}</div>
         </div>
       </div>
-      <div class="research-interests"><h2 class="profile-subheading">Research Interests</h2>{interests}</div>
+      <section id="research-interests" class="research-interests" aria-labelledby="research-interests-heading"><h2 class="profile-subheading" id="research-interests-heading">Research Interests</h2>{interests}</section>
     </section>'''
 
 
